@@ -2,7 +2,7 @@ state={
 	id=792
 	name="STATE_792"
 
-	state_category = city
+	state_category = large_city
 
 	history={
 		owner = FRA
@@ -27,6 +27,6 @@ state={
 	provinces={
 		11465 11616
 	}
-	manpower=0
+	manpower = 659428
 	buildings_max_level_factor=1.000
 }

@@ -1,0 +1,96 @@
+##### Division Templates #####
+division_template = {
+	name = "Rejimant Troadegiezh"
+	#division_names_group = BRI_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artilery = { x = 0 y = 0 }
+    engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Marc'hegerezh Skañv"
+	#division_names_group = BRI_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Rejimant Troadegiezh Tankoù"
+	#division_names_group = BRI_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Rejimant Troadegiezh ar Morlu Gwened"
+	#division_names_group = BRI_MAR_01
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+
+	priority = 2
+}
+
+##division depart##
+
+units = {
+	division= {
+		name = "Brigade de défense Bretonne"
+		location = 3552
+		division_template = "Rejimant Troadegiezh"
+		start_experience_factor = 0.3
+	}
+
+  division= {
+		name = "Régiment d'infanterie marine de Vannes"
+		location = 9510
+		division_template = "Rejimant Troadegiezh ar Morlu Gwened"
+		start_experience_factor = 0.3
+	}
+
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BRI"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+}

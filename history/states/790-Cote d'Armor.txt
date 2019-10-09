@@ -2,7 +2,7 @@ state={
 	id=790
 	name="STATE_790"
 
-	state_category = city
+	state_category = town
 
 	history={
 		owner = BRI
@@ -26,6 +26,7 @@ state={
 	provinces={
 		3758 6548 6572 9525
 	}
-	manpower=0
+
+	manpower = 532000
 	buildings_max_level_factor=1.000
 }
