@@ -1,0 +1,102 @@
+﻿capital = 14
+
+OOB = "ALB_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 95
+	fascism = 1
+	communism = 2
+	neutrality = 2
+}
+
+set_convoys = 50
+
+create_country_leader = {
+	name = "François Debeauvais"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "debeauvais.dds"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Blanche de Castille Bourbon"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "blanche.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Marcel Cachin"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "cachin.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Maurice Duhamel"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "duhamel.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Loïc Morvan"
+	gfx = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { # }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Jacques Riou"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Gwenaël Le Gourriérec"
+	gfx = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
