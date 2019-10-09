@@ -1,0 +1,35 @@
+state={
+	id=791
+	name="STATE_791"
+
+	state_category = city
+
+	history={
+		owner = BRI
+		victory_points = {
+			3552 5
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 2
+			fuel_silo = 1
+			anti_air_building = 1
+
+			3552 = {
+				naval_base = 10
+				coastal_bunker = 1
+			}
+
+		}
+		add_core_of = BRI
+
+	}
+
+	provinces={
+		542 3552
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

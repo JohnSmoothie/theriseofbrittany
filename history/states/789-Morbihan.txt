@@ -1,0 +1,33 @@
+state={
+	id=789
+	name="STATE_789"
+
+	state_category = city
+
+	history={
+		owner = BRI
+		victory_points = {
+			6536 5
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 2
+			air_base = 2
+
+			6536 = {
+				naval_base = 4
+				coastal_bunker = 1
+			}
+
+		}
+		add_core_of = BRI
+
+	}
+
+	provinces={
+		6536 9510
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}
