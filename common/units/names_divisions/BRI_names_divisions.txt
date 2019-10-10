@@ -1,0 +1,397 @@
+﻿BRI_INF_01 = {
+	name = "Rejimant Troadegiezh"
+
+	for_countries = { BRI }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%añ Rejimant Troadegiezh"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		2 = { "%añ Rejimant Troadegiezh" }
+		4 = { "%añ Rejimant Troadegiezh" }
+		6 = { "%añ Rejimant Troadegiezh" }
+		7 = { "%añ Rejimant Troadegiezh" }
+		10 = { "%añ Rejimant Troadegiezh" }
+		11 = { "%añ Rejimant Troadegiezh" }
+		13 = { "%añ Rejimant Troadegiezh" }
+		14 = { "%añ Rejimant Troadegiezh" }
+		16 = { "%añ Rejimant Troadegiezh" }
+		18 = { "%añ Rejimant Troadegiezh" }
+		19 = { "%añ Rejimant Troadegiezh" }
+		20 = { "%añ Rejimant Troadegiezh" }
+		21 = { "%añ Rejimant Troadegiezh" }
+		22 = { "%añ Rejimant Troadegiezh" }
+		23 = { "%añ Rejimant Troadegiezh" }
+		24 = { "%añ Rejimant Troadegiezh" }
+		26 = { "%añ Rejimant Troadegiezh" }
+		36 = { "%añ Rejimant Troadegiezh" }
+		42 = { "%añ Rejimant Troadegiezh" }
+		43 = { "%añ Rejimant Troadegiezh" }
+		32 = { "%añ Rejimant Troadegiezh" }
+		35 = { "%añ Rejimant Troadegiezh" }
+		41 = { "%añ Rejimant Troadegiezh" }
+		45 = { "%añ Rejimant Troadegiezh" }
+		47 = { "%añ Rejimant Troadegiezh" }
+		51 = { "%añ Rejimant Troadegiezh" }
+		52 = { "%añ Rejimant Troadegiezh" }
+		53 = { "%añ Rejimant Troadegiezh" }
+		54 = { "%añ Rejimant Troadegiezh" }
+		55 = { "%añ Rejimant Troadegiezh" }
+		56 = { "%añ Rejimant Troadegiezh" }
+		57 = { "%añ Rejimant Troadegiezh" }
+		58 = { "%añ Rejimant Troadegiezh" }
+		60 = { "%añ Rejimant Troadegiezh" }
+		61 = { "%añ Rejimant Troadegiezh" }
+		62 = { "%añ Rejimant Troadegiezh" }
+		63 = { "%añ Rejimant Troadegiezh" }
+		66 = { "%añ Rejimant Troadegiezh" }
+		67 = { "%añ Rejimant Troadegiezh" }
+		70 = { "%añ Rejimant Troadegiezh" }
+		71 = { "%añ Rejimant Troadegiezh" }
+		81 = { "%añ Rejimant Troadegiezh" }
+		83 = { "%añ Rejimant Troadegiezh" }
+		85 = { "%añ Rejimant Troadegiezh" }
+		82 = { "%añ Rejimant Troadegiezh" }
+		84 = { "%añ Rejimant Troadegiezh" }
+		86 = { "%añ Rejimant Troadegiezh" }
+		87 = { "%añ Rejimant Troadegiezh" }
+		88 = { "%añ Rejimant Troadegiezh" }
+		180 = { "%añ Rejimant Troadegiezh" }
+		181 = { "%añ Rejimant Troadegiezh" }
+		182 = { "%añ Rejimant Troadegiezh" }
+		183 = { "%añ Rejimant Troadegiezh" }
+		191 = { "%añ Rejimant Troadegiezh" }
+		192 = { "%añ Rejimant Troadegiezh" }
+		8 = { "%añ Rejimant Troadegiezh" }
+		44 = { "%añ Rejimant Troadegiezh" }
+		68 = { "%añ Rejimant Troadegiezh" }
+		303 = { "%añ Rejimant Troadegiezh" }
+		301 = { "%añ Rejimant Troadegiezh" }
+		302 = { "%añ Rejimant Troadegiezh" }
+		59 = { "%añ Rejimant Troadegiezh" }
+		40 = { "%añ Rejimant Troadegiezh" }
+		17 = { "%añ Rejimant Troadegiezh" }
+		353 = { "%añ Rejimant Troadegiezh" }
+		235 = { "%añ Rejimant Troadegiezh" }
+		236 = { "%añ Rejimant Troadegiezh" }
+		237 = { "%añ Rejimant Troadegiezh" }
+		238 = { "%añ Rejimant Troadegiezh" }
+		239 = { "%añ Rejimant Troadegiezh" }
+		240 = { "%añ Rejimant Troadegiezh" }
+		241 = { "%añ Rejimant Troadegiezh" }
+		33 = { "%añ Rejimant Troadegiezh" }
+		34 = { "%añ Rejimant Troadegiezh" }
+		37 = { "%añ Rejimant Troadegiezh" }
+		38 = { "%añ Rejimant Troadegiezh" }
+		39 = { "%añ Rejimant Troadegiezh" }
+		46 = { "%añ Rejimant Troadegiezh" }
+		48 = { "%añ Rejimant Troadegiezh" }
+		49 = { "%añ Rejimant Troadegiezh" }
+		50 = { "%añ Rejimant Troadegiezh" }
+		69 = { "%añ Rejimant Troadegiezh" }
+		72 = { "%añ Rejimant Troadegiezh" }
+		73 = { "%añ Rejimant Troadegiezh" }
+		74 = { "%añ Rejimant Troadegiezh" }
+		75 = { "%añ Rejimant Troadegiezh" }
+		76 = { "%añ Rejimant Troadegiezh" }
+		77 = { "%añ Rejimant Troadegiezh" }
+		78 = { "%añ Rejimant Troadegiezh" }
+		79 = { "%añ Rejimant Troadegiezh" }
+		80 = { "%añ Rejimant Troadegiezh" }
+		89 = { "%añ Rejimant Troadegiezh" }
+		90 = { "%añ Rejimant Troadegiezh" }
+		91 = { "%añ Rejimant Troadegiezh" }
+		92 = { "%añ Rejimant Troadegiezh" }
+		93 = { "%añ Rejimant Troadegiezh" }
+		94 = { "%añ Rejimant Troadegiezh" }
+		95 = { "%añ Rejimant Troadegiezh" }
+		96 = { "%añ Rejimant Troadegiezh" }
+		97 = { "%añ Rejimant Troadegiezh" }
+		98 = { "%añ Rejimant Troadegiezh" }
+		99 = { "%añ Rejimant Troadegiezh" }
+		100 = { "%añ Rejimant Troadegiezh" }
+		151 = { "%añ Rejimant Troadegiezh" }
+		152 = { "%añ Rejimant Troadegiezh" }
+		153 = { "%añ Rejimant Troadegiezh" }
+		154 = { "%añ Rejimant Troadegiezh" }
+		155 = { "%añ Rejimant Troadegiezh" }
+		156 = { "%añ Rejimant Troadegiezh" }
+		157 = { "%añ Rejimant Troadegiezh" }
+		158 = { "%añ Rejimant Troadegiezh" }
+		159 = { "%añ Rejimant Troadegiezh" }
+		160 = { "%añ Rejimant Troadegiezh" }
+		161 = { "%añ Rejimant Troadegiezh" }
+		162 = { "%añ Rejimant Troadegiezh" }
+		163 = { "%añ Rejimant Troadegiezh" }
+		164 = { "%añ Rejimant Troadegiezh" }
+		165 = { "%añ Rejimant Troadegiezh" }
+		166 = { "%añ Rejimant Troadegiezh" }
+		167 = { "%añ Rejimant Troadegiezh" }
+		168 = { "%añ Rejimant Troadegiezh" }
+		169 = { "%añ Rejimant Troadegiezh" }
+		170 = { "%añ Rejimant Troadegiezh" }
+		171 = { "%añ Rejimant Troadegiezh" }
+		172 = { "%añ Rejimant Troadegiezh" }
+		173 = { "%añ Rejimant Troadegiezh" }
+		174 = { "%añ Rejimant Troadegiezh" }
+		175 = { "%añ Rejimant Troadegiezh" }
+		176 = { "%añ Rejimant Troadegiezh" }
+		177 = { "%añ Rejimant Troadegiezh" }
+		178 = { "%añ Rejimant Troadegiezh" }
+		179 = { "%añ Rejimant Troadegiezh" }
+		184 = { "%añ Rejimant Troadegiezh" }
+		185 = { "%añ Rejimant Troadegiezh" }
+		186 = { "%añ Rejimant Troadegiezh" }
+		187 = { "%añ Rejimant Troadegiezh" }
+		188 = { "%añ Rejimant Troadegiezh" }
+		189 = { "%añ Rejimant Troadegiezh" }
+		190 = { "%añ Rejimant Troadegiezh" }
+		193 = { "%añ Rejimant Troadegiezh" }
+		194 = { "%añ Rejimant Troadegiezh" }
+		195 = { "%añ Rejimant Troadegiezh" }
+		196 = { "%añ Rejimant Troadegiezh" }
+		197 = { "%añ Rejimant Troadegiezh" }
+		198 = { "%añ Rejimant Troadegiezh" }
+		199 = { "%añ Rejimant Troadegiezh" }
+		200 = { "%añ Rejimant Troadegiezh" }
+	}
+}
+
+BRI_ARM_01 =
+{
+	name = "Tank Brigade"
+
+	for_countries = { BRI }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%añ Rejimant Troadegiezh Tankoù"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%añ Rejimant Troadegiezh Tankoù" }
+		2 = { "%añ Rejimant Troadegiezh Tankoù" }
+		3 = { "%añ Rejimant Troadegiezh Tankoù" }
+		41 = { "%añ Rejimant Troadegiezh Tankoù" }
+		42 = { "%añ Rejimant Troadegiezh Tankoù" }
+		43 = { "%añ Rejimant Troadegiezh Tankoù" }
+		4 = { "%añ Rejimant Troadegiezh Tankoù" }
+		5 = { "%añ Rejimant Troadegiezh Tankoù" }
+		6 = { "%añ Rejimant Troadegiezh Tankoù" }
+		7 = { "%añ Rejimant Troadegiezh Tankoù" }
+		8 = { "%añ Rejimant Troadegiezh Tankoù" }
+		9 = { "%añ Rejimant Troadegiezh Tankoù" }
+		10 = { "%añ Rejimant Troadegiezh Tankoù" }
+		11 = { "%añ Rejimant Troadegiezh Tankoù" }
+		12 = { "%añ Rejimant Troadegiezh Tankoù" }
+		13 = { "%añ Rejimant Troadegiezh Tankoù" }
+		14 = { "%añ Rejimant Troadegiezh Tankoù" }
+		15 = { "%añ Rejimant Troadegiezh Tankoù" }
+		16 = { "%añ Rejimant Troadegiezh Tankoù" }
+		17 = { "%añ Rejimant Troadegiezh Tankoù" }
+		18 = { "%añ Rejimant Troadegiezh Tankoù" }
+		19 = { "%añ Rejimant Troadegiezh Tankoù" }
+		20 = { "%añ Rejimant Troadegiezh Tankoù" }
+		21 = { "%añ Rejimant Troadegiezh Tankoù" }
+		22 = { "%añ Rejimant Troadegiezh Tankoù" }
+		23 = { "%añ Rejimant Troadegiezh Tankoù" }
+		24 = { "%añ Rejimant Troadegiezh Tankoù" }
+		25 = { "%añ Rejimant Troadegiezh Tankoù" }
+		26 = { "%añ Rejimant Troadegiezh Tankoù" }
+		27 = { "%añ Rejimant Troadegiezh Tankoù" }
+		28 = { "%añ Rejimant Troadegiezh Tankoù" }
+		29 = { "%añ Rejimant Troadegiezh Tankoù" }
+		30 = { "%añ Rejimant Troadegiezh Tankoù" }
+		31 = { "%añ Rejimant Troadegiezh Tankoù" }
+		32 = { "%añ Rejimant Troadegiezh Tankoù" }
+		33 = { "%añ Rejimant Troadegiezh Tankoù" }
+		34 = { "%añ Rejimant Troadegiezh Tankoù" }
+		35 = { "%añ Rejimant Troadegiezh Tankoù" }
+		36 = { "%añ Rejimant Troadegiezh Tankoù" }
+		37 = { "%añ Rejimant Troadegiezh Tankoù" }
+		38 = { "%añ Rejimant Troadegiezh Tankoù" }
+		39 = { "%añ Rejimant Troadegiezh Tankoù" }
+		40 = { "%añ Rejimant Troadegiezh Tankoù" }
+	}
+}
+
+BRI_MOT_01 =
+{
+	name = "Motorized Division"
+
+	for_countries = { BRI }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { BRI_INF_01 }
+
+	fallback_name = "%añ Rejimant dre geflusker "
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%añ Rejimant dre geflusker " }
+		3 = { "%añ Rejimant dre geflusker " }
+		5 = { "%añ Rejimant dre geflusker " }
+		9 = { "%añ Rejimant dre geflusker " }
+		12 = { "%añ Rejimant dre geflusker " }
+		15 = { "%añ Rejimant dre geflusker " }
+		25 = { "%añ Rejimant dre geflusker " }
+		91 = { "%añ Rejimant dre geflusker " }
+		92 = { "%añ Rejimant dre geflusker " }
+		93 = { "%añ Rejimant dre geflusker " }
+		94 = { "%añ Rejimant dre geflusker " }
+		95 = { "%añ Rejimant dre geflusker " }
+		96 = { "%añ Rejimant dre geflusker " }
+		97 = { "%añ Rejimant dre geflusker " }
+		98 = { "%añ Rejimant dre geflusker " }
+		99 = { "%añ Rejimant dre geflusker " }
+		100 = { "%añ Rejimant dre geflusker " }
+		121 = { "%añ Rejimant dre geflusker " }
+		122 = { "%añ Rejimant dre geflusker " }
+		123 = { "%añ Rejimant dre geflusker " }
+		124 = { "%añ Rejimant dre geflusker " }
+		125 = { "%añ Rejimant dre geflusker " }
+		126 = { "%añ Rejimant dre geflusker " }
+		127 = { "%añ Rejimant dre geflusker " }
+		128 = { "%añ Rejimant dre geflusker " }
+		129 = { "%añ Rejimant dre geflusker " }
+		130 = { "%añ Rejimant dre geflusker " }
+		131 = { "%añ Rejimant dre geflusker " }
+		132 = { "%añ Rejimant dre geflusker " }
+		133 = { "%añ Rejimant dre geflusker " }
+		134 = { "%añ Rejimant dre geflusker " }
+		135 = { "%añ Rejimant dre geflusker " }
+		136 = { "%añ Rejimant dre geflusker " }
+		137 = { "%añ Rejimant dre geflusker " }
+		138 = { "%añ Rejimant dre geflusker " }
+		139 = { "%añ Rejimant dre geflusker " }
+		140 = { "%añ Rejimant dre geflusker " }
+	}
+}
+
+BRI_CAV_01 =
+{
+	name = "Cavalry Division"
+
+	for_countries = { BRI }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	fallback_name = "%añ Marc'hegerezh Skañv"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%añ Marc'hegerezh Skañv" }
+		2 = { "%añ Marc'hegerezh Skañv" }
+		3 = { "%añ Marc'hegerezh Skañv" }
+		4 = { "%añ Marc'hegerezh Skañv" }
+		5 = { "%añ Marc'hegerezh Skañv" }
+		6 = { "%añ Marc'hegerezh Skañv" }
+		7 = { "%añ Marc'hegerezh Skañv" }
+		8 = { "%añ Marc'hegerezh Skañv" }
+		9 = { "%añ Marc'hegerezh Skañv" }
+		10 = { "%añ Marc'hegerezh Skañv" }
+		11 = { "%añ Marc'hegerezh Skañv" }
+		12 = { "%añ Marc'hegerezh Skañv" }
+		13 = { "%añ Marc'hegerezh Skañv" }
+		14 = { "%añ Marc'hegerezh Skañv" }
+		15 = { "%añ Marc'hegerezh Skañv" }
+		16 = { "%añ Marc'hegerezh Skañv" }
+		17 = { "%añ Marc'hegerezh Skañv" }
+		18 = { "%añ Marc'hegerezh Skañv" }
+		19 = { "%añ Marc'hegerezh Skañv" }
+		20 = { "%añ Marc'hegerezh Skañv" }
+	}
+}
+
+BRI_PAR_01 =
+{
+	name = "Paratrooper Division"
+
+	for_countries = { BRI }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	fallback_name = "%añ harzlammer"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		10 = { "%añ harzlammer" }
+		25 = { "%añ harzlammer" }
+		24 = { "%añ harzlammer" }
+		801 = { "%añ harzlammer" }
+		11 = { "%añ harzlammer" }
+		1 = { "%añ harzlammer" }
+		2 = { "%añ harzlammer" }
+		3 = { "%añ harzlammer" }
+		4 = { "%añ harzlammer" }
+		5 = { "%añ harzlammer" }
+		6 = { "%añ harzlammer" }
+		7 = { "%añ harzlammer" }
+		8 = { "%añ harzlammer" }
+		9 = { "%añ harzlammer" }
+	}
+}
+
+BRI_MAR_01 =
+{
+	name = "Marine Division"
+
+	for_countries = { BRI }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+
+	fallback_name = "%añ Rejimant Troadegiezh ar Morlu Gwened"
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		2 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		3 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		4 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		5 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		6 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		7 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		8 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		9 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		10 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		11 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		12 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		13 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		14 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		15 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		16 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		17 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		18 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		19 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+		20 = { "%añ Rejimant Troadegiezh ar Morlu Gwened" }
+	}
+}

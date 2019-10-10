@@ -1,7 +1,7 @@
 ##### Division Templates #####
 division_template = {
 	name = "Rejimant Troadegiezh"
-	#division_names_group = BRI_INF_01
+	division_names_group = BRI_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -14,14 +14,14 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		artilery = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
     engineer = { x = 0 y = 0 }
 	}
 }
 
 division_template = {
 	name = "Marc'hegerezh Skañv"
-	#division_names_group = BRI_CAV_01
+	division_names_group = BRI_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -35,7 +35,7 @@ division_template = {
 
 division_template = {
 	name = "Rejimant Troadegiezh Tankoù"
-	#division_names_group = BRI_ARM_01
+	division_names_group = BRI_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -46,7 +46,7 @@ division_template = {
 
 division_template = {
 	name = "Rejimant Troadegiezh ar Morlu Gwened"
-	#division_names_group = BRI_MAR_01
+	division_names_group = BRI_MAR_01
 
 	regiments = {
 		marine = { x = 0 y = 0 }
@@ -64,17 +64,43 @@ division_template = {
 
 units = {
 	division= {
-		name = "Brigade de défense Bretonne"
+    division_name = {
+      is_name_ordered = yes
+      name_order = 1
+      }
 		location = 3552
 		division_template = "Rejimant Troadegiezh"
 		start_experience_factor = 0.3
 	}
 
   division= {
-		name = "Régiment d'infanterie marine de Vannes"
+    division_name = {
+      is_name_ordered = yes
+      name_order = 1
+    }
 		location = 9510
 		division_template = "Rejimant Troadegiezh ar Morlu Gwened"
 		start_experience_factor = 0.3
+	}
+
+	fleet = {
+		name = "Groupe Naval Breton"
+		naval_base = 3552
+		task_force = {
+			name = "Flotte d'attaque de Brest"
+			location = 3552 # Brest
+			ship = { name = "Pays Renais" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BRI version_name = "Pays Renais Class" } }	}
+			ship = { name = "" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRI version_name = "Brest Class"} } }
+			ship = { name = "" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRI version_name = "Brest Class"} } }
+		}
+		task_force = {
+			name = "Force de Lorient"
+			location = 6536 # Lorient
+			ship = { name = "" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRI version_name = "Vilaine Class" } } }
+			ship = { name = "" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRI version_name = "Vilaine Class" } } }
+			ship = { name = "" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRI version_name = "Vilaine Class" } } }
+			ship = { name = "" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRI version_name = "Vilaine Class" } } }
+		}
 	}
 
 }

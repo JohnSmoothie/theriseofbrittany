@@ -1,0 +1,90 @@
+BRI_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { BRI }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+
+	fallback_name = "Destroyer"
+
+	unique = {
+		"Brest" "Quimpert" "Rennes" "Lorient" "Vannes"  "Saint-Malo"  "Saint-Brieuc"  "Lanester"  "Fougères"
+    "Concarneau"  "Bruz"  "Ploemeur"  "Cesson-Sévigné"
+    "Hennebont"  "Morlaix"  "Douarnenez"  "Pontivy"  "Plérin"  "Auray" "Lamballe"  "Plougastel-Daoulas"  "Saint-Jacques-de-la-Lande"  "Plouzané"
+    "Quimperlé"  "Pacé " "Le Relecq-Kerhuon " "Guidel " "Ploufragan " "Saint-Avé " "Dinan" "Betton" "Chantepie "
+    "Dinard " "Loudéac"  "Ploërmel"  "Fouesnant"  "Châteaugiron"  "Saint-Grégoire " "Thorigné-Fouillard " "Le Rheu"  "Plabennec"  "Ergué-Gabéric"  "Janzé"  "Guichen"  "Pont-l'Abbé"  "Larmor-Plage " "Saint-Renan"  "Guilers"  "Theix-Noyalo"  "Vern-sur-Seiche"  "Sarzeau"
+    "Languidic" "Rosporden"  "Crozon " "Langueux " "Questembert " "Pluvigner"  "Liffré " "Chartres-de-Bretagne" "Bain-de-Bretagne " "Carhaix-Plouguer"  "Lesneven"  "Perros-Guirec " "Guingamp " "Muzillac" "Quiberon" "Nivillac "
+	}
+}
+
+### LIGHT CRUISER NAMES###
+BRI_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { BRI }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+
+	fallback_name = "Croiseur Léger"
+
+	unique = {
+		"Anne de Bretagne" "Waldeck-Rousseau" "Cailliaud" "Cartier" "Surcouf" "Duguay-Trouin" "La Motte-Picquet" "Kerstrat"
+    "La Fontenelle" "Hyacinthe Laennec" "Chateaubriand" "Jules Verne" "Botrel"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+BRI_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { BRI }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+
+	fallback_name = "Croiseur Lourd"
+
+	unique = {
+		"Pays de Saint-Malo" "Pays de Saint-Brieuc" "Pays de Dol" "Pays Nantais" "Vannetais" "Trégor" "Léon" "Cornouaille" "Pays Rennais" 
+	}
+}
+
+BRI_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { BRI }
+
+	can_use = {
+		#
+	}
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+
+	fallback_name = "%s Sous-Marin"
+
+	unique = {
+		"Vilaine" "Aulne" "Arguenon" "Beuvron" "Brivet" "Brutz" "Cantache" "Cens" "Chézine" "Couesnon" "Douffine" "Ellé" "Erdre" "Ével"
+    "Falleron" "Frémur Ouest" "Gesvres" "Gouessant" "Guillec" "Hyères" "Ille" "Isac" "Isole" "Jarlot" "Laïta" "Liziec" "Léguer"
+    "Maine" "Mignonne" "Moros" "Névet" "Néal" "Odet" "Oust" "Penfeld" "Pérouse" "Quillimadec" "Rance" "Sanguèze" "Scorff" "Sarre"
+    "Sèvre Nantaise" "Seiche" "Trieux" "Yar" "Yvel"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+BRI_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { BRI }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser battleship}
+
+	fallback_name = "Cuirassé"
+
+	unique = {
+        "Morbihan" "Finistere" "Ille et Vilaine" "Cote d'Armor" "Loire Atlantique"
+	}
+}

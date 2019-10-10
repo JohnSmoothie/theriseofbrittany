@@ -14,7 +14,7 @@ ideas = {
 
       removal_cost = -1
 
-      picture = Victors_of_the_Great_War
+      picture = generic_victors_of_ww1
 
       modifier = {
         political_power_gain = 0.25
@@ -65,6 +65,30 @@ political_advisor = {
     do_effect = {
       NOT = {
         has_government = democratic
+      }
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  BRI_bernian_le_coadou = {
+    allowed = {
+      original_tag = "BRI"
+    }
+
+    picture = generic_political_advisor_europe_6
+
+    available = {
+      #
+    }
+
+    traits = { royalist_bulldog }
+
+    do_effect = {
+      NOT = {
+        has_government = neutrality
       }
     }
 
@@ -491,6 +515,8 @@ materiel_manufacturer = {
       original_tag = BRI
     }
 
+    picture = generic_infantry_equipment_manufacturer_1
+
     research_bonus = {
       infantry_weapons = 0.15
     }
@@ -498,11 +524,13 @@ materiel_manufacturer = {
     traits = { infantry_equipment_manufacturer }
   }
 
-  schneider = {
+  BRI_materiel_manufacturer = {
 
     allowed = {
       original_tag = BRI
     }
+
+    picture = generic_artillery_manufacturer_1
 
     research_bonus = {
       artillery = 0.15
@@ -522,6 +550,8 @@ aircraft_manufacturer = {
       original_tag = BRI
     }
 
+    picture = generic_air_manufacturer_2
+
     research_bonus = {
       air_equipment = 0.15
     }
@@ -534,6 +564,8 @@ aircraft_manufacturer = {
     allowed = {
       original_tag = BRI
     }
+
+    picture = generic_air_manufacturer_1
 
     research_bonus = {
       air_equipment = 0.15
@@ -548,6 +580,8 @@ aircraft_manufacturer = {
       original_tag = BRI
     }
 
+    picture = generic_air_manufacturer_2
+
     research_bonus = {
       air_equipment = 0.15
     }
@@ -560,6 +594,8 @@ aircraft_manufacturer = {
     allowed = {
       original_tag = BRI
     }
+
+    picture = generic_air_manufacturer_1
 
     research_bonus = {
       air_equipment = 0.15
@@ -580,6 +616,8 @@ naval_manufacturer = {
       original_tag = BRI
     }
 
+    picture = generic_coastal_navy
+
     research_bonus = {
       naval_equipment = 0.15
     }
@@ -592,6 +630,8 @@ naval_manufacturer = {
     allowed = {
       original_tag = BRI
     }
+
+    picture = generic_sea_focused_navy
 
     available = {
       controls_state = 792
@@ -608,11 +648,13 @@ naval_manufacturer = {
 
 industrial_concern = {
 
-  famh = {
+  BRI_commite_industrielle = {
 
     allowed = {
-      original_tag = FRA
+      original_tag = BRI
     }
+
+    picture = generic_industrial_concern_1
 
     research_bonus = {
       industry = 0.15
@@ -624,11 +666,13 @@ industrial_concern = {
 
 
 theorist = {
-  charles_de_gaulle = {
+  BRI_mikelig_gouez = {
 
     allowed = {
-      original_tag = FRA
+      original_tag = BRI
     }
+
+    picture = generic_army_europe_3
 
     cost = 250
 
@@ -640,21 +684,17 @@ theorist = {
 
     ai_will_do = {
       factor = 1
-      modifier = {
-        factor = 0
-
-        GER = { is_ai = yes }
-        date < 1939.1.1
-      }
     }
 
   }
 
-  henri_giraud = {
+  BRI_gwihen_le_goff = {
 
     allowed = {
-      original_tag = FRA
+      original_tag = BRI
     }
+
+    picture = generic_army_europe_2
 
     research_bonus = {
       land_doctrine = 0.10
@@ -662,23 +702,18 @@ theorist = {
 
     ai_will_do = {
       factor = 1
-      modifier = {
-        factor = 0
-
-        GER = { is_ai = yes }
-        date < 1939.1.1
-      }
     }
 
     traits = { military_theorist }
   }
 
-  louis_kahn = {
-
+  BRI_venec_goasdoue = {
 
     allowed = {
-      original_tag = FRA
+      original_tag = BRI
     }
+
+    picture = generic_navy_europe_2
 
     cost = 250
 
@@ -689,13 +724,13 @@ theorist = {
     traits = { grand_fleet_proponent }
   }
 
-  jean_decoux = {
-
+  BRI_tanguy_menguy = {
 
     allowed = {
-      original_tag = FRA
+      original_tag = BRI
     }
 
+    picture = generic_navy_europe_3
 
     research_bonus = {
       naval_doctrine = 0.10
@@ -704,12 +739,13 @@ theorist = {
     traits = { naval_theorist }
   }
 
-  victor_denain = {
-
+  BRI_kenerin_le_trocquer = {
 
     allowed = {
-      original_tag = FRA
+      original_tag = BRI
     }
+
+    picture = generic_air_europe_2
 
     cost = 250
 
@@ -720,11 +756,13 @@ theorist = {
     traits = { assault_avaition }
   }
 
-  jean_marie_bergeret = {
+  BRI_beuzeg_vallerie = {
 
     allowed = {
-      original_tag = FRA
+      original_tag = BRI
     }
+
+    picture = generic_air_europe_3
 
     research_bonus = {
       air_doctrine = 0.10
@@ -733,13 +771,12 @@ theorist = {
     traits = { air_warfare_theorist }
   }
 
-  frederic_irene_joliot_curie = {
-
+  BRI_meloar_rolland = {
 
     allowed = {
-      original_tag = FRA
+      original_tag = BRI
     }
-
+    picture = generic_political_advisor_europe_4
 
     research_bonus = {
       nuclear = 0.15

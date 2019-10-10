@@ -1,0 +1,172 @@
+BRI = {
+  submarine = {
+    prefix = ""
+    generic = { "Sous-Marin" }
+    unique = {
+      "Vilaine" "Aulne" "Arguenon" "Beuvron" "Brivet" "Brutz" "Cantache" "Cens" "Chézine" "Couesnon" "Douffine" "Ellé" "Erdre" "Ével"
+      "Falleron" "Frémur Ouest" "Gesvres" "Gouessant" "Guillec" "Hyères" "Ille" "Isac" "Isole" "Jarlot" "Laïta" "Liziec" "Léguer"
+      "Maine" "Mignonne" "Moros" "Névet" "Néal" "Odet" "Oust" "Penfeld" "Pérouse" "Quillimadec" "Rance" "Sanguèze" "Scorff" "Sarre"
+      "Sèvre Nantaise" "Seiche" "Trieux" "Yar" "Yvel"
+    }
+  }
+
+  destroyer = {
+		prefix = ""
+		generic = { "Destroyer" }
+		unique = {
+      "Brest" "Quimpert" "Rennes" "Lorient" "Vannes"  "Saint-Malo"  "Saint-Brieuc"  "Lanester"  "Fougères"
+      "Concarneau"  "Bruz"  "Ploemeur"  "Cesson-Sévigné"
+      "Hennebont"  "Morlaix"  "Douarnenez"  "Pontivy"  "Plérin"  "Auray" "Lamballe"  "Plougastel-Daoulas"  "Saint-Jacques-de-la-Lande"  "Plouzané"
+      "Quimperlé"  "Pacé " "Le Relecq-Kerhuon " "Guidel " "Ploufragan " "Saint-Avé " "Dinan" "Betton" "Chantepie "
+      "Dinard " "Loudéac"  "Ploërmel"  "Fouesnant"  "Châteaugiron"  "Saint-Grégoire " "Thorigné-Fouillard " "Le Rheu"  "Plabennec"  "Ergué-Gabéric"  "Janzé"  "Guichen"  "Pont-l'Abbé"  "Larmor-Plage " "Saint-Renan"  "Guilers"  "Theix-Noyalo"  "Vern-sur-Seiche"  "Sarzeau"
+      "Languidic" "Rosporden"  "Crozon " "Langueux " "Questembert " "Pluvigner"  "Liffré " "Chartres-de-Bretagne" "Bain-de-Bretagne " "Carhaix-Plouguer"  "Lesneven"  "Perros-Guirec " "Guingamp " "Muzillac" "Quiberon" "Nivillac "
+		}
+	}
+
+  light_cruiser = {
+		prefix = ""
+		generic = { "Croiseur Léger" }
+		unique = {
+      "Anne de Bretagne" "Waldeck-Rousseau" "Cailliaud" "Cartier" "Surcouf" "Duguay-Trouin" "La Motte-Picquet" "Kerstrat"
+      "La Fontenelle" "Hyacinthe Laennec" "Chateaubriand" "Jules Verne" "Botrel"
+		}
+	}
+
+  heavy_cruiser = {
+		prefix = ""
+		generic = { "Croiseur Lourd" }
+		unique = {
+			"Pays Rennais" "Pays de Saint-Malo" "Pays de Saint-Brieuc" "Pays de Dol" "Pays Nantais" "Vannetais" "Trégor" "Léon"
+		}
+	}
+
+  battle_cruiser = {
+    prefix = ""
+    generic = { "Croiseur Cuirassé" }
+    unique = {
+      "Morbihan" "Finistere" "Ille et Vilaine" "Cote d'Armor" "Loire Atlantique"
+    }
+  }
+  battleship = {
+    prefix = ""
+    generic = { "Navire de Ligne" }
+    unique = {
+      "Morbihan" "Finistere" "Ille et Vilaine" "Cote d'Armor" "Loire Atlantique"
+    }
+  }
+
+  carrier = {
+		prefix = ""
+		generic = { "Porte-Avions" }
+		unique = {
+			"Bretagne" "Dreux"
+		}
+  }
+
+  air_wing_names_template = AIR_WING_NAME_GER_FALLBACK
+
+	#Air wings can only be named through archetype
+	fighter_equipment = {
+		prefix = ""
+		generic = { "Groupe de Chasse" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+		}
+	}
+
+	jet_fighter_equipment = {
+		prefix = ""
+		generic = { "Groupe de Chasse" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+		}
+	}
+
+	heavy_fighter_equipment = {
+		prefix = ""
+		generic = { "Groupe de Chasse" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+		}
+	}
+
+	CAS_equipment = {
+		prefix = ""
+		generic = { "Groupe de Attaque" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+		}
+	}
+
+	cv_fighter_equipment = {
+		prefix = ""
+		generic = { "Flotille" }
+		generic_pattern = AIR_WING_NAME_FRA_CARRIER
+		unique = {
+		}
+	}
+
+	cv_CAS_equipment = {
+		prefix = ""
+		generic = { "Flotille" }
+		generic_pattern = AIR_WING_NAME_FRA_CARRIER
+		unique = {
+		}
+	}
+	cv_nav_bomber_equipment = {
+		prefix = ""
+		generic = { "Flotille" }
+		generic_pattern = AIR_WING_NAME_FRA_CARRIER
+		unique = {
+		}
+	}
+
+	tac_bomber_equipment = {
+		prefix = ""
+		generic = { "Groupe de Bombardement" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+		}
+	}
+
+	jet_tac_bomber_equipment = {
+		prefix = ""
+		generic = { "Groupe de Bombardement" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+		}
+	}
+
+	nav_bomber_equipment = {
+		prefix = ""
+		generic = { "Flotille" }
+		generic_pattern = AIR_WING_NAME_FRA_CARRIER
+		unique = {
+		}
+	}
+
+	strat_bomber_equipment = {
+		prefix = ""
+		generic = { "Groupe de Bombardement" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+		}
+	}
+
+	jet_strat_bomber_equipment = {
+		prefix = ""
+		generic = { "Groupe de Bombardement" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+		}
+	}
+
+	transport_plane_equipment = {
+		prefix = ""
+		generic = { "Escadron de Transport" }
+		generic_pattern = AIR_WING_NAME_FRA_GENERIC
+		unique = {
+		}
+	}
+
+}

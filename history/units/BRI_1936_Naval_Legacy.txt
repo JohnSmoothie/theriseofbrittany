@@ -1,0 +1,24 @@
+units = {
+	fleet = {
+		name = "Groupe Naval Breton"
+		naval_base = 3552
+		task_force = {
+			name = "Flotte d'attaque de Brest"
+			location = 3552 # Brest
+			ship = { name = "" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BRI version_name = "Pays Renais Class" } }	}
+			ship = { name = "" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BRI version_name = "Anne de Bretagne Class" } } }
+			ship = { name = "" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BRI version_name = "Anne de Bretagne Class" } } }
+			ship = { name = "" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRI version_name = "Brest Class"} } }
+			ship = { name = "" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRI version_name = "Brest Class"} } }
+			ship = { name = "" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRI version_name = "Brest Class"} } }
+		}
+		task_force = {
+			name = "Force de Lorient"
+			location = 6536 # Lorient
+			ship = { name = "" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRI version_name = "Vilaine Class" } } }
+			ship = { name = "" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRI version_name = "Vilaine Class" } } }
+			ship = { name = "" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRI version_name = "Vilaine Class" } } }
+			ship = { name = "" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRI version_name = "Vilaine Class" } } }
+		}
+	}
+}
