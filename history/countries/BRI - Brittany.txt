@@ -152,7 +152,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Loïc Morvan"
-	picture = "portrait_europe_generic_6.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
 	skill = 3
   attack_skill = 3
   defense_skill = 2
@@ -162,7 +162,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "Jacques Riou"
-	picture = "portrait_europe_generic_4.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
 	skill = 2
 	attack_skill = 2
   defense_skill = 3
@@ -172,7 +172,7 @@ create_field_marshal = {
 
 create_navy_leader = {
 	name = "Gwenaël Le Gourriérec"
-	picture = "Portrait_Europe_Generic_navy_1.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_navy_3.dds"
 	skill = 4
 	attack_skill = 4
 	defense_skill = 3
