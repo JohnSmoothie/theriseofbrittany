@@ -37,6 +37,21 @@ ideas = {
       }
     }
 
+    BRI_ecole_mines {
+      allowed = {
+        original_tag = BRI
+      }
+
+      removal_cost = -1
+
+      picture = generic_production_bonus
+
+      modifier = {
+        local_resources_factor = 0.1
+        production_speed_synthetic_refinery_factor = 0.1
+      }
+    }
+
   }
 
 # POLITICAL

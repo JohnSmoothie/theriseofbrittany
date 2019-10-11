@@ -27,7 +27,7 @@ focus_tree = {
 	focus = {
 		id = BRI_industrialisation_program
 		icon = GFX_goal_generic_construction
-		x = 4
+		x = 12
 		y = 0
 
 		cost = 10
@@ -383,10 +383,481 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			remove_idea = BRI_steunv_industrielaat
+			remove_ideas = BRI_steunv_industrielaat
 			add_research_slot = 1
 		}
 	}
+
+	focus = {
+		id = BRI_ecole_mines
+		icon = GFX_focus_generic_military_academy
+		prerequisite = {focus = BRI_complete_industrial_program}
+		x = -2
+		y = 1
+		relative_position_id = BRI_complete_industrial_program
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			#
+		}
+
+		bypass = {
+			#
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = BRI_ecole_mines
+		}
+	}
+
+	focus = {
+		id = BRI_brest_refinery
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = {focus = BRI_ecole_mines}
+		x = 1
+		y = 1
+		relative_position_id = BRI_ecole_mines
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			controls_state = 791
+		}
+
+		bypass = {
+			NOT = {controls_state = 791}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			791 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+		}
+	}
+
+	focus = {
+		id = BRI_open_steel_mines
+		icon = GFX_focus_generic_steel
+		prerequisite = {focus = BRI_ecole_mines}
+		x = -1
+		y = 1
+		relative_position_id = BRI_ecole_mines
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_tech = excavation1
+			controls_state = 790
+		}
+
+		bypass = {
+			NOT = {controls_state = 790}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			790 = { add_resource = {type = steel amount = 8 }}
+		}
+	}
+
+	focus = {
+		id = BRI_prospect_alu
+		icon = GFX_focus_generic_aluminum
+		prerequisite = {focus = BRI_open_steel_mines}
+		x = 0
+		y = 1
+		relative_position_id = BRI_open_steel_mines
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_tech = excavation1
+			controls_state = 791
+		}
+
+		bypass = {
+			NOT = {controls_state = 791}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			791 = { add_resource = {type = aluminium amount = 10 }}
+		}
+	}
+
+	focus = {
+		id = BRI_exp_steel_mines
+		icon = GFX_focus_generic_steel
+		prerequisite = {focus = BRI_prospect_alu}
+		x = 0
+		y = 1
+		relative_position_id = BRI_prospect_alu
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_tech = excavation2
+			controls_state = 790
+		}
+
+		bypass = {
+			NOT = {controls_state = 790}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			790 = { add_resource = {type = steel amount = 10 }}
+		}
+	}
+
+	focus = {
+		id = BRI_old_capital
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = {focus = BRI_complete_industrial_program}
+		x = 2
+		y = 1
+		relative_position_id = BRI_complete_industrial_program
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			owns_state = 792
+		}
+
+		bypass = {
+			#
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			792 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_modernize_st_nazaire
+		icon = GFX_focus_generic_industry_2
+		prerequisite = {focus = BRI_old_capital}
+		x = -1
+		y = 1
+		relative_position_id = BRI_old_capital
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			controls_state = 792
+		}
+
+		bypass = {
+			#
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			792 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+						type = naval_base
+						province = 11465
+						level = 3
+						instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_nantes_arms
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {focus = BRI_old_capital}
+		x = 1
+		y = 1
+		relative_position_id = BRI_old_capital
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			controls_state = 792
+		}
+
+		bypass = {
+			#
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			792 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_nantes_university
+		icon = GFX_focus_research2
+		prerequisite = {focus = BRI_old_capital}
+		x = 0
+		y = 2
+		relative_position_id = BRI_old_capital
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			owns_state = 792
+		}
+
+		bypass = {
+			#
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = BRI_donge_refinery
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = {focus = BRI_brest_refinery}
+		prerequisite = {focus = BRI_modernize_st_nazaire}
+		x = 1
+		y = 1
+		relative_position_id = BRI_brest_refinery
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			controls_state = 792
+		}
+
+		bypass = {
+			NOT = {controls_state = 792}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			792 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+		}
+	}
+
+	focus = {
+		id = BRI_improve_rubber
+		icon = GFX_focus_generic_rubber
+		prerequisite = {focus = BRI_nantes_university}
+		prerequisite = {focus = BRI_donge_refinery}
+		x = 1
+		y = 1
+		relative_position_id = BRI_donge_refinery
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			#
+		}
+
+		bypass = {
+			#
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			modify_building_resources = {
+						 building = synthetic_refinery
+						 resource = rubber
+						 amount = 2
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_project_broceliande
+		icon = GFX_focus_wonderweapons
+		prerequisite = {focus = BRI_nantes_university}
+		x = 2
+		y = 0
+		relative_position_id = BRI_improve_rubber
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 2
+				category = nuclear
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_jet_effort
+		icon = GFX_focus_rocketry
+		prerequisite = {focus = BRI_nantes_university}
+		x = 4
+		y = 0
+		relative_position_id = BRI_improve_rubber
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+		}
+	}
+
+
+
 
 
 }

@@ -2297,3 +2297,29 @@
  BRI_arms_vannes:0 "Open the military complex in Vannes"
 
  BRI_complete_industrial_program:0 "Complete the Industrialization program"
+
+ BRI_ecole_mines:0 "L'ecole des mines"
+
+ BRI_brest_refinery:0 "Brest Refineries"
+
+ BRI_open_steel_mines:0 "Open the steel mines"
+
+ BRI_prospect_alu:0 "Prospect for Aluminium"
+
+ BRI_exp_steel_mines:0 "Expend the steel mines"
+
+ BRI_old_capital:0 "The old capital"
+
+ BRI_modernize_st_nazaire:0 "Modernize the port of St-Nazaire"
+
+ BRI_nantes_arms:0 "Nantes's munition factories"
+
+ BRI_nantes_university:0 "The university of Nantes"
+
+ BRI_donge_refinery:0 "Open the refinery of Donges"
+
+ BRI_improve_rubber:0 "Improve rubber production"
+
+ BRI_project_broceliande:0 "Project Brocéliande"
+
+ BRI_jet_effort:0 "Nijerez Dreistson"
