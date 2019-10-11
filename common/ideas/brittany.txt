@@ -9,7 +9,7 @@ ideas = {
       }
 
       allowed_civil_war = {
-        has_government = democratic
+        OR = {has_government = democratic has_government = neutrality}
       }
 
       removal_cost = -1
@@ -17,10 +17,26 @@ ideas = {
       picture = generic_victors_of_ww1
 
       modifier = {
-        political_power_gain = 0.25
-        stability_factor = +0.10
+        political_power_gain = 0.10
+        stability_factor = +0.05
       }
     }
+
+    ##industie##
+    BRI_steunv_industrielaat {
+      allowed = {
+        original_tag = BRI
+      }
+
+      removal_cost = -1
+
+      picture = generic_production_bonus
+
+      modifier = {
+        production_speed_buildings_factor = 0.1
+      }
+    }
+
   }
 
 # POLITICAL
@@ -84,7 +100,7 @@ political_advisor = {
       #
     }
 
-    traits = { royalist_bulldog }
+    traits = { staunch_monarchist }
 
     do_effect = {
       NOT = {

@@ -1,0 +1,392 @@
+focus_tree = {
+	id = brittany_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = BRI
+			has_dlc = "Together for Victory"
+		}
+
+		modifier = {
+			add = 10
+			original_tag = BRI
+			has_dlc = "Together for Victory"
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	############################
+	##### INDUSTRY BRANCH ######
+	############################
+
+	focus = {
+		id = BRI_industrialisation_program
+		icon = GFX_goal_generic_construction
+		x = 4
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = BRI_steunv_industrielaat
+			add_tech_bonus = {
+				#name = BRI_industrialisation_program
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_vannes_to_brest
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {focus = BRI_industrialisation_program}
+		x = -1
+		y = 1
+		relative_position_id = BRI_industrialisation_program
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			controls_state = 791
+			controls_state = 789
+		}
+
+		bypass = {
+			NOT = {controls_state = 791 controls_state = 789}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			789 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			791 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_saint_malot_to_brest
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {focus = BRI_industrialisation_program}
+		x = 1
+		y = 1
+		relative_position_id = BRI_industrialisation_program
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			controls_state = 791
+			controls_state = 790
+		}
+
+		bypass = {
+			NOT = {controls_state = 791 controls_state = 790}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			790 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			791 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_improve_western_capital
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {focus = BRI_saint_malot_to_brest}
+		prerequisite = {focus = BRI_vannes_to_brest}
+		x = 0
+		y = 2
+		relative_position_id = BRI_industrialisation_program
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			controls_state = 791
+		}
+
+		bypass = {
+			NOT = {controls_state = 791}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			791 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_urbanize_rennes
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {focus = BRI_improve_western_capital}
+		x = -1
+		y = 1
+		relative_position_id = BRI_improve_western_capital
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			controls_state = 788
+		}
+
+		bypass = {
+			NOT = {controls_state = 788}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			788 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_urbanize_lorient
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {focus = BRI_improve_western_capital}
+		x = 1
+		y = 1
+		relative_position_id = BRI_improve_western_capital
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			controls_state = 789
+		}
+
+		bypass = {
+			NOT = {controls_state = 789}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			789 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_arms_redon
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {focus = BRI_urbanize_rennes}
+		x = 0
+		y = 1
+		relative_position_id = BRI_urbanize_rennes
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			controls_state = 788
+		}
+
+		bypass = {
+			NOT = {controls_state = 788}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			788 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_arms_vannes
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {focus = BRI_urbanize_lorient}
+		x = 0
+		y = 1
+		relative_position_id = BRI_urbanize_lorient
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			controls_state = 789
+		}
+
+		bypass = {
+			NOT = {controls_state = 789}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			789 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_complete_industrial_program
+		icon = GFX_focus_research
+		prerequisite = {focus = BRI_arms_vannes}
+		prerequisite = {focus = BRI_arms_redon}
+		x = 1
+		y = 1
+		relative_position_id = BRI_arms_redon
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_idea = BRI_steunv_industrielaat
+			add_research_slot = 1
+		}
+	}
+
+
+}

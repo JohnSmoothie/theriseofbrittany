@@ -21,7 +21,7 @@ foreign_politics = {
 
 		visible = {
 			has_war = no
-			has_government = democratic
+			OR {has_government = democratic has_government = neutrality}
 			NOT = { owns_state = 792 }
 		}
 
