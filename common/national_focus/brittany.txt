@@ -1187,7 +1187,7 @@ focus_tree = {
 		}
 
 		available = {
-			#date > 1938.01.10
+			date > 1938.01.10
 			is_subject_of = FRA
 		}
 
@@ -1408,7 +1408,7 @@ focus_tree = {
 		available = {
 			is_subject_of = FRA
 			FRA = { has_capitulated = no }
-			#date > 1940.01.1
+			date > 1940.01.1
 		}
 
 		bypass = {

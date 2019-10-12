@@ -1,0 +1,32 @@
+add_namespace = ace_promoted
+
+country_event = {
+  id = brittany.1
+  title = brittany.1.t
+  desc = brittany.1.d
+  picture = GFX_report_event_indian_famine
+
+  trigger = {
+    tag = BRI
+    BRI = { has_war = yes }
+    is_subject_of = FRA
+    FRA = { has_capitulated = yes }
+  }
+  fire_only_once = yes
+
+  mean_time_to_happen = { days = 1 }
+
+  immediate = { FRA = {set_autonomy = { target = BRI autonomy_state = autonomy_free }}}
+
+  every_enemy_country = {
+  limit = { has_war_with = BRI }
+    white_peace = BRI
+  }
+
+  option = {
+    name = indiamod.2.a
+    effect_tooltip = {
+    every_enemy_country = { white_peace = BRI}
+    }
+  }
+}
