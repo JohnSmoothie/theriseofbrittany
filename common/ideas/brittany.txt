@@ -52,6 +52,79 @@ ideas = {
       }
     }
 
+    BRI_french_aid_1 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      available = {
+        FRA = { has_capitulated = no }
+        is_subject_of = FRA
+			}
+
+      removal_cost = -1
+
+      picture = generic_goods_red_bonus
+
+      modifier = {
+        consumer_goods_factor = -0.05
+      }
+    }
+
+    BRI_french_aid_2 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      available = {
+				FRA = { has_capitulated = no }
+        is_subject_of = FRA
+			}
+
+      removal_cost = -1
+
+      picture = generic_goods_red_bonus
+
+      modifier = {
+        consumer_goods_factor = -0.1
+      }
+    }
+
+    BRI_ma_bro {
+      allowed = {
+        original_tag = BRI
+      }
+
+      available {
+        has_autonomy_state = autonomy_free
+      }
+
+      removal_cost = -1
+
+      picture = idea_hol_the_foundations_of_defense
+
+      modifier = {
+        consumer_goods_factor = -0.05
+        production_speed_buildings_factor = 0.1
+        industrial_capacity_factory = 0.1
+        industrial_capacity_dockyard = 0.1
+      }
+    }
+
+    BRI_independance_turmoil {
+      allowed = {
+        original_tag = BRI
+      }
+
+      removal_cost = -1
+
+      picture = idea_usa_great_depression_2
+
+      modifier = {
+        consumer_goods_factor = 0.1
+      }
+    }
+
   }
 
 # POLITICAL

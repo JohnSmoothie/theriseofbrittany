@@ -2280,6 +2280,7 @@
  sirte_oil_developed:0 "Sirte Oil Fields Developed"
 
  ##Brittany##
+ ##Industry##
  BRI_industrialisation_program:0 "Industrialization Program"
  BRI_industrialisation_program_desc:0 "We must start our first industrial program for the future of Brittany"
  BRI_vannes_to_brest:0 "Vannes to Brest road"
@@ -2323,3 +2324,34 @@
  BRI_project_broceliande:0 "Project Brocéliande"
 
  BRI_jet_effort:0 "Nijerez Dreistson"
+
+ ##political##
+ BRI_call_PFB:0 "Call the PFB"
+
+ BRI_carry_on_economic_aid:0 "Keep the economic aids"
+
+ BRI_stop_aid:0 "Cut the economic aids"
+
+ BRI_joint_industrial:0 "Joint industrial plan"
+
+ BRI_request_autonomy_1:0 "Request more autonomy"
+
+ BRI_joint_military:0 "Joint military construction program"
+
+ BRI_joint_naval:0 "Joint naval construction program"
+
+ BRI_joint_research:0 "Joint research program"
+
+ BRI_request_colony:0 "Push for even more autonomy"
+
+ BRI_increase_investment:0 "Increase french investments"
+
+ BRI_request_dominion:0 "Request the separation of the institutions"
+
+ BRI_final_joint_industry:0 "Final Joint Industrialisation Plan"
+
+ BRI_rewarded_loyalty:0 "Rewarded loyalty"
+
+ BRI_deal_independance:0 "Deal for Independance"
+
+ BRI_focus_ma_bro:0 "Ma Bro"

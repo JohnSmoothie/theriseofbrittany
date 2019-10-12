@@ -17,6 +17,8 @@ focus_tree = {
 		}
 	}
 
+	continuous_focus_position = { x = 50 y = 4000 }
+
 	default = no
 	reset_on_civilwar = no
 
@@ -27,7 +29,7 @@ focus_tree = {
 	focus = {
 		id = BRI_industrialisation_program
 		icon = GFX_goal_generic_construction
-		x = 12
+		x = 40
 		y = 0
 
 		cost = 10
@@ -857,7 +859,608 @@ focus_tree = {
 	}
 
 
+	##Political##
+	focus = {
+		id = BRI_call_PFB
+		icon = GFX_goal_generic_demand_territory
+		x = 8
+		y = 0
 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = BRI_carry_on_economic_aid
+		icon = GFX_focus_generic_treaty
+		prerequisite = {focus = BRI_call_PFB}
+		x = -6
+		y = 1
+		relative_position_id = BRI_call_PFB
+
+		mutually_exclusive = { focus = BRI_stop_aid}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			is_subject_of = FRA
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = BRI_french_aid_1
+		}
+	}
+
+	focus = {
+		id = BRI_stop_aid
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {focus = BRI_call_PFB}
+		x = 6
+		y = 1
+		relative_position_id = BRI_call_PFB
+
+		mutually_exclusive = { focus = BRI_carry_on_economic_aid}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = BRI_independance_turmoil
+		}
+	}
+
+	focus = {
+		id = BRI_joint_industrial
+		icon = GFX_focus_generic_industry_1
+		prerequisite = {focus = BRI_carry_on_economic_aid}
+		x = 0
+		y = 1
+		relative_position_id = BRI_carry_on_economic_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			is_subject_of = FRA
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			FRA = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_request_autonomy_1
+		icon = GFX_focus_generic_self_management
+		prerequisite = {focus = BRI_joint_industrial}
+		x = 0
+		y = 1
+		relative_position_id = BRI_joint_industrial
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			is_subject_of = FRA
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -100
+			FRA = {
+				set_autonomy = {
+					target = BRI
+					autonomous_state = autonomy_puppet
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_joint_military
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {focus = BRI_request_autonomy_1}
+		x = -2
+		y = 1
+		relative_position_id = BRI_request_autonomy_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			is_subject_of = FRA
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			FRA = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_joint_naval
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = {focus = BRI_request_autonomy_1}
+		x = 2
+		y = 1
+		relative_position_id = BRI_request_autonomy_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			is_subject_of = FRA
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			789 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			FRA = {
+				792 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_joint_research
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = {focus = BRI_request_autonomy_1}
+		x = 0
+		y = 1
+		relative_position_id = BRI_request_autonomy_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			is_subject_of = FRA
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+			add_to_tech_sharing_group = FRA_BRI_research
+			FRA = {add_to_tech_sharing_group = FRA_BRI_research}
+		}
+
+	}
+
+	focus = {
+		id = BRI_request_colony
+		icon = GFX_focus_generic_self_management
+		prerequisite = {focus = BRI_joint_military}
+		prerequisite = {focus = BRI_joint_naval}
+		x = 0
+		y = 1
+		relative_position_id = BRI_joint_research
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			#date > 1938.01.10
+			is_subject_of = FRA
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -100
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+						is_subject = yes
+						NOT = { has_autonomy_state = autonomy_colony }
+					}
+					FRA = {set_autonomy = { target = BRI autonomy_state = autonomy_colony }}
+				}
+		}
+
+	}
+
+	focus = {
+		id = BRI_increase_investment
+		icon = GFX_focus_generic_industry_2
+		prerequisite = {focus = BRI_request_colony}
+		x = 0
+		y = 1
+		relative_position_id = BRI_request_colony
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			is_subject_of = FRA
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+		 		remove_idea = BRI_french_aid_1
+		 		add_idea = BRI_french_aid_2
+			}
+		}
+
+	}
+
+	focus = {
+		id = BRI_request_dominion
+		icon = GFX_focus_generic_self_management
+		prerequisite = {focus = BRI_increase_investment}
+		x = 0
+		y = 1
+		relative_position_id = BRI_increase_investment
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			#date > 1939.03.1
+			is_subject_of = FRA
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+						is_subject = yes
+						NOT = { has_autonomy_state = autonomy_dominion }
+					}
+					FRA = {set_autonomy = { target = BRI autonomy_state = autonomy_dominion }}
+				}
+		}
+
+	}
+
+	focus = {
+		id = BRI_final_joint_industry
+		icon = GFX_focus_generic_industry_3
+		prerequisite = {focus = BRI_request_dominion}
+		x = 0
+		y = 1
+		relative_position_id = BRI_request_dominion
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			is_subject_of = FRA
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			FRA = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			FRA = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_rewarded_loyalty
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = {focus = BRI_final_joint_industry}
+		x = -2
+		y = 1
+		relative_position_id = BRI_final_joint_industry
+
+		cost = 10
+
+		mutually_exclusive = { focus = BRI_deal_independance}
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			is_subject_of = FRA
+			FRA = { has_capitulated = no }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			transfer_state = 792
+		}
+	}
+
+	focus = {
+		id = BRI_deal_independance
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = {focus = BRI_final_joint_industry}
+		x = 0
+		y = 1
+		relative_position_id = BRI_final_joint_industry
+
+		cost = 10
+
+		mutually_exclusive = { focus = BRI_rewarded_loyalty}
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			is_subject_of = FRA
+			FRA = { has_capitulated = no }
+			#date > 1940.01.1
+		}
+
+		bypass = {
+			has_autonomy_state = autonomy_free
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+					is_subject = yes
+					NOT = { has_autonomy_state = autonomy_free }
+				}
+				FRA = {set_autonomy = { target = BRI autonomy_state = autonomy_free }}
+			}
+			remove_ideas = BRI_french_aid_2
+		}
+	}
+
+	focus = {
+		id = BRI_focus_ma_bro
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = BRI_deal_independance}
+		x = 0
+		y = 1
+		relative_position_id = BRI_deal_independance
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = BRI_ma_bro
+	}
 
 
 }
