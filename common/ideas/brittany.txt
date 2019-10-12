@@ -52,6 +52,8 @@ ideas = {
       }
     }
 
+    ##Political##
+
     BRI_french_aid_1 {
       allowed = {
         original_tag = BRI
@@ -111,9 +113,13 @@ ideas = {
       }
     }
 
-    BRI_independance_turmoil {
+    BRI_independance_turmoil_1 {
       allowed = {
         original_tag = BRI
+      }
+
+      available {
+
       }
 
       removal_cost = -1
@@ -122,6 +128,26 @@ ideas = {
 
       modifier = {
         consumer_goods_factor = 0.1
+      }
+    }
+
+    BRI_independance_turmoil_2 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      available {
+
+      }
+
+      removal_cost = -1
+
+      picture = idea_usa_great_depression_3
+
+      modifier = {
+        consumer_goods_factor = 0.1
+        stability_factor = -0.15
+        political_power_gain = -0.25
       }
     }
 

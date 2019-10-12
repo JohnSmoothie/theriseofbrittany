@@ -952,7 +952,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = BRI_independance_turmoil
+			add_ideas = BRI_independance_turmoil_1
 		}
 	}
 
@@ -1460,6 +1460,41 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = BRI_ma_bro
+		}
+	}
+
+	focus = {
+		id = BRI_immediate_independance
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {focus = BRI_stop_aid}
+		x = 0
+		y = 1
+		relative_position_id = BRI_stop_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BRI_independance_turmoil_1
+				add_idea = BRI_independance_turmoil_2
+			}
+		}
 	}
 
 
