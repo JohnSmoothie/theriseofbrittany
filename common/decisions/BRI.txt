@@ -55,6 +55,47 @@ foreign_politics = {
 			set_capital = 792
 		}
 	}
+
+	BRI_core_ireland = {
+		allowed = {
+			original_tag = BRI
+		}
+
+		available = {
+			has_government = neutrality
+			owns_state = 135
+			owns_state = 119
+			owns_state = 134
+			owns_state = 113
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_completed_focus = BRI_united_kingdoms
+		}
+
+		complete_effect = {
+			135 = {
+				add_core_of = BRI
+			}
+			119 = {
+				add_core_of = BRI
+			}
+			119 = {
+				add_core_of = BRI
+			}
+			113 = {
+				add_core_of = BRI
+			}
+		}
+	}
 }
 
 BRI_host_jewish_refugees = {
@@ -142,8 +183,8 @@ BRI_protector_celtic_world = {
 		}
 
 		complete_effect = {
-			ENG = {release = WLS}
-			#ENG = { country_event = brittany.4 }
+			#ENG = {release = WLS}
+			ENG = { country_event = brittany.4 }
 			WLS = { country_event = generic.5 }
 		}
 	}
@@ -172,11 +213,13 @@ BRI_protector_celtic_world = {
 		}
 
 		complete_effect = {
-			ENG = {release = SCO}
-			#ENG = { country_event = brittany.5 }
+			#ENG = {release = SCO}
+			ENG = { country_event = brittany.5 }
 			SCO = { country_event = generic.5 }
 		}
 	}
+
+
 
 
 }

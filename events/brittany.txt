@@ -57,9 +57,7 @@ country_event = {
 	desc = brittany.3.d
 	picture = report_event_generic_riot
 
-	trigger = {
-		tag = BRI
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
@@ -71,34 +69,56 @@ country_event = {
 	}
 }
 
-#country_event = {
-#	id = brittany.4
-#	title = brittany.4.t
-#	desc = brittany.4.d
-#	picture = report_event_generic_riot
+country_event = {
+	id = brittany.4
+	title = brittany.4.t
+	desc = brittany.4.d
+	picture = report_event_generic_riot
 
-#	fire_only_once = yes
+	fire_only_once = yes
 
-#	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
 
-#	option = {
-#		name = brittany.4.a
-#		ENG = {release = WLS}
-#	}
-#}
+	mean_time_to_happen = { days = 1 }
 
-#country_event = {
-#	id = brittany.5
-#	title = brittany.5.t
-#	desc = brittany.5.d
-#	picture = report_event_generic_riot
+	option = {
+		name = brittany.4.a
+		ENG = {release = WLS}
+	}
+}
 
-#	fire_only_once = yes
+country_event = {
+	id = brittany.5
+	title = brittany.5.t
+	desc = brittany.5.d
+	picture = report_event_generic_riot
 
-#	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
 
-#	option = {
-#		name = brittany.5.a
-#		ENG = {release = SCO}
-#	}
-#}
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = brittany.5.a
+		ENG = {release = SCO}
+	}
+}
+
+country_event = {
+	id = brittany.6
+	title = brittany.6.t
+	desc = brittany.6.d
+	picture = report_event_generic_riot
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = brittany.6.a
+		BRI = {transfer_state = 792}
+	}
+}

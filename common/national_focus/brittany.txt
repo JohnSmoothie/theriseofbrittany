@@ -1506,6 +1506,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = BRI_immediate_independance
 
+		mutually_exclusive = { focus = BRI_new_way}
+
 		cost = 10
 
 		ai_will_do = {
@@ -1850,6 +1852,9 @@ focus_tree = {
 
 		cost = 10
 
+		mutually_exclusive = { focus = BRI_brittany_britain}
+		mutually_exclusive = { focus = BRI_irish_raprochement}
+
 		ai_will_do = {
 			factor = 90
 		}
@@ -1948,10 +1953,13 @@ focus_tree = {
 	focus = {
 		id = BRI_brittany_britain
 		icon = GFX_focus_chi_british_cooperation
-		prerequisite = {focus = BRI_proclaim_breton_republic}
+		prerequisite = {focus = BRI_proclaim_breton_republic focus = BRI_call_hairess}
 		x = 2
 		y = 0
 		relative_position_id = BRI_celtic_all
+
+		mutually_exclusive = { focus = BRI_celtic_all}
+		mutually_exclusive = { focus = BRI_irish_raprochement}
 
 		cost = 10
 
@@ -1972,6 +1980,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_opinion_modifier = { target = ENG modifier = large_increase }
+			ENG = {add_opinion_modifier = { target = BRI modifier = large_increase }}
 			ENG = { country_event = generic.2 }
 		}
 	}
@@ -1985,6 +1995,8 @@ focus_tree = {
 		relative_position_id = BRI_brittany_britain
 
 		cost = 10
+
+
 
 		ai_will_do = {
 			factor = 90
@@ -2029,6 +2041,464 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = BRI_new_way
+		icon = GFX_focus_usa_voter_registration_act
+		prerequisite = {focus = BRI_immediate_independance}
+		x = 4
+		y = 1
+		relative_position_id = BRI_immediate_independance
 
+		mutually_exclusive = { focus = BRI_keep_federalist}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = BRI_a_new_way
+				days = 720
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_old_traditions
+		icon = GFX_focus_generic_home_defense
+		prerequisite = {focus = BRI_new_way}
+		x = 0
+		y = 1
+		relative_position_id = BRI_new_way
+
+		mutually_exclusive = { focus = BRI_enforce_identity}
+		mutually_exclusive = { focus = BRI_red_lighthouse}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas {
+				remove_idea = BRI_a_new_way
+				add_idea = BRI_a_new_way_neut
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_enforce_identity
+		icon = GFX_goal_support_fascism
+		prerequisite = {focus = BRI_new_way}
+		x = 6
+		y = 1
+		relative_position_id = BRI_new_way
+
+		mutually_exclusive = { focus = BRI_old_traditions}
+		mutually_exclusive = { focus = BRI_red_lighthouse}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas {
+				remove_idea = BRI_a_new_way
+				add_idea = BRI_a_new_way_fasc
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_red_lighthouse
+		icon = GFX_goal_support_communism
+		prerequisite = {focus = BRI_new_way}
+		x = 11
+		y = 1
+		relative_position_id = BRI_new_way
+
+		mutually_exclusive = { focus = BRI_old_traditions}
+		mutually_exclusive = { focus = BRI_enforce_identity}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas {
+				remove_idea = BRI_a_new_way
+				add_idea = BRI_a_new_way_comm
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_call_hairess
+		icon = GFX_focus_hol_the_only_man_in_the_dutch_government
+		prerequisite = {focus = BRI_old_traditions}
+		x = 0
+		y = 2
+		relative_position_id = BRI_old_traditions
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			neutrality > 0.4
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			remove_ideas = BRI_independance_turmoil_2
+		}
+	}
+
+	focus = {
+		id = BRI_ducal_factory
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {focus = BRI_call_hairess}
+		x = -1
+		y = 1
+		relative_position_id = BRI_call_hairess
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_reopen_french_relations
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = {focus = BRI_call_hairess}
+		x = 0
+		y = 3
+		relative_position_id = BRI_call_hairess
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_opinion_modifier = { target = FRA modifier = large_increase }
+			FRA = {add_opinion_modifier = { target = BRI modifier = large_increase }}
+		}
+	}
+
+	focus = {
+		id = BRI_ask_home_duchess
+		icon = GFX_focus_generic_treaty
+		prerequisite = {focus = BRI_reopen_french_relations}
+		x = 0
+		y = 1
+		relative_position_id = BRI_reopen_french_relations
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			FRA = {controls_state = 792}
+			NOT = {has_war_with = FRA}
+		}
+
+		bypass = {
+			owns_state = 792
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			FRA = { country_event = brittany.6 }
+
+		}
+	}
+
+	focus = {
+		id = BRI_irish_raprochement
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = {focus = BRI_call_hairess}
+		x = 2
+		y = 2
+		relative_position_id = BRI_call_hairess
+
+		mutually_exclusive = { focus = BRI_brittany_britain}
+		mutually_exclusive = { focus = BRI_celtic_all}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_government = neutrality
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_opinion_modifier = { target = IRE modifier = large_increase }
+			IRE = {add_opinion_modifier = { target = BRI modifier = large_increase }}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				IRE = {
+					add_ideas = BRI_IRE_neutrality_support_1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_irish_coup
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {focus = BRI_irish_raprochement}
+		x = 0
+		y = 1
+		relative_position_id = BRI_irish_raprochement
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_government = neutrality
+			IRE = {neutrality > 0.5}
+		}
+
+		bypass = {
+			IRE = {is_subject_of = BRI}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_autonomy = { target = IRE autonomy_state = autonomy_puppet }
+		}
+	}
+
+	focus = {
+		id = BRI_northern_ireland_issue
+		icon = GFX_focus_generic_provoke_border_clashes
+		prerequisite = {focus = BRI_irish_coup}
+		x = 0
+		y = 1
+		relative_position_id = BRI_irish_coup
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			IRE = {is_subject_of = BRI}
+		}
+
+		bypass = {
+			IRE = {owns_state = 119}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			ENG = { country_event = brittany.3 }
+		}
+	}
+
+	focus = {
+		id = BRI_united_kingdoms
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = {focus = BRI_northern_ireland_issue}
+		x = 0
+		y = 1
+		relative_position_id = BRI_northern_ireland_issue
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_government = neutrality
+			IRE = {is_subject_of = BRI}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			IRE = {
+				swap_ideas = {
+					remove_idea = BRI_IRE_neutrality_support_1
+					add_idea = BRI_IRE_neutrality_support_2
+				}
+			}
+			set_autonomy = { target = IRE autonomy_state = autonomy_integrated_puppet }
+		}
+	}
+
+	focus = {
+		id = BRI_catholic_schools
+		icon = GFX_focus_research
+		prerequisite = {focus = BRI_call_hairess}
+		x = 3
+		y = 1
+		relative_position_id = BRI_call_hairess
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 
 }

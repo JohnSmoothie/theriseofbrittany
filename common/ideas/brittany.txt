@@ -220,7 +220,7 @@ ideas = {
       rule = {
 				can_create_factions = yes
 			}
-      
+
     }
 
     BRI_forteress_brittany_1 {
@@ -256,9 +256,115 @@ ideas = {
       }
     }
 
+    BRI_a_new_way {
+      allowed = {
+        original_tag = BRI
+      }
 
+      picture = tfv_can_conscription_crisis
+
+      removal_cost = -1
+
+      modifier = {
+        democratic_drift = -0.10
+        consumer_goods_factor = -0.05
+      }
+    }
+
+    BRI_a_new_way_neut {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = tfv_can_conscription_crisis
+
+      removal_cost = -1
+
+      modifier = {
+        democratic_drift = -0.10
+        consumer_goods_factor = -0.05
+        neutrality_drift = 0.10
+      }
+    }
+
+    BRI_a_new_way_fasc {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = tfv_can_conscription_crisis
+
+      removal_cost = -1
+
+      modifier = {
+        democratic_drift = -0.10
+        consumer_goods_factor = -0.05
+        fascism_drift = 0.10
+      }
+    }
+
+    BRI_a_new_way_comm {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = tfv_can_conscription_crisis
+
+      removal_cost = -1
+
+      modifier = {
+        democratic_drift = -0.10
+        consumer_goods_factor = -0.05
+        communism_drift = 0.10
+      }
+    }
+
+    BRI_IRE_neutrality_support_1 {
+      allowed = {
+        original_tag = IRE
+      }
+
+      picture = idea_generic_deal_with_the_devil2
+
+      removal_cost = -1
+
+      modifier = {
+        neutrality_drift = 0.20
+      }
+    }
+
+    BRI_IRE_neutrality_support_2 {
+      allowed = {
+        original_tag = IRE
+      }
+
+      picture = idea_generic_deal_with_the_devil2
+
+      removal_cost = -1
+
+      modifier = {
+        neutrality_drift = 0.20
+        autonomy_gain = -0.1
+      }
+    }
+
+    BRI_keltiegadur {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = generic_constitutional_guarantee
+
+      removal_cost = -1
+
+      rule = {
+				can_create_factions = yes
+			}
+    }
 
   }
+
+
 
 # POLITICAL
 political_advisor = {
@@ -270,7 +376,7 @@ political_advisor = {
     picture = generic_political_advisor_europe_4
 
     available = {
-      #
+      has_completed_focus = BRI_red_lighthouse
     }
 
     traits = { communist_revolutionary }
@@ -318,7 +424,7 @@ political_advisor = {
     picture = generic_political_advisor_europe_6
 
     available = {
-      #
+      has_completed_focus = BRI_old_traditions
     }
 
     traits = { staunch_monarchist }
@@ -344,7 +450,7 @@ political_advisor = {
     picture = generic_political_advisor_europe_2
 
     available ={
-      #
+      has_completed_focus = BRI_enforce_identity
     }
 
     traits = { fascist_demagogue }
