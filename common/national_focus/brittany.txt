@@ -1465,7 +1465,7 @@ focus_tree = {
 
 	focus = {
 		id = BRI_immediate_independance
-		icon = GFX_focus_renounce_the_treaty_of_trianon
+		icon = GFX_focus_attack_france
 		prerequisite = {focus = BRI_stop_aid}
 		x = 0
 		y = 1
@@ -1494,8 +1494,541 @@ focus_tree = {
 				remove_idea = BRI_independance_turmoil_1
 				add_idea = BRI_independance_turmoil_2
 			}
+			FRA = {set_autonomy = { target = BRI autonomy_state = autonomy_free }}
 		}
 	}
+
+	focus = {
+		id = BRI_keep_federalist
+		icon = GFX_goal_support_democracy
+		prerequisite = {focus = BRI_immediate_independance}
+		x = -4
+		y = 1
+		relative_position_id = BRI_immediate_independance
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BRI_independance_turmoil_2
+				add_idea = BRI_independance_turmoil_3
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_ease_concers
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = {focus = BRI_keep_federalist}
+		x = 0
+		y = 1
+		relative_position_id = BRI_keep_federalist
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BRI_independance_turmoil_3
+				add_idea = BRI_independance_turmoil_4
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_proclaim_breton_republic
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = BRI_ease_concers}
+		x = 0
+		y = 1
+		relative_position_id = BRI_ease_concers
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BRI_independance_turmoil_4
+				add_idea = BRI_breton_republic_1
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_research_republic
+		icon = GFX_focus_research
+		prerequisite = {focus = BRI_proclaim_breton_republic}
+		x = 1
+		y = 1
+		relative_position_id = BRI_proclaim_breton_republic
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = BRI_breton_research
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = BRI_forteress_brittany
+		icon = GFX_goal_generic_construction2
+		prerequisite = {focus = BRI_proclaim_breton_republic focus = BRI_request_dominion}
+		x = -2
+		y = 3
+		relative_position_id = BRI_proclaim_breton_republic
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_war = no
+			threat > 0.3
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = BRI_forteress_brittany_1
+		}
+	}
+
+	focus = {
+		id = BRI_our_maginot
+		icon = GFX_goal_generic_construction2
+		prerequisite = {focus = BRI_forteress_brittany}
+		x = 1
+		y = 1
+		relative_position_id = BRI_forteress_brittany
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		army_experience = 5
+			788 = {
+				add_building_construction = { type = bunker province = 11508 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9495 level = 3 instant_build = yes }
+			}
+			if = {
+				limit = {
+					owns_state = 792
+				}
+				792 = {
+					add_building_construction = { type = bunker province = 11465 level = 3 instant_build = yes }
+					add_building_construction = { type = bunker province = 11616 level = 3 instant_build = yes }
+				}
+			}
+			else = {
+				789 = {
+					add_building_construction = { type = bunker province = 9510 level = 3 instant_build = yes }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_naval_fort
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = {focus = BRI_forteress_brittany}
+		x = 3
+		y = 1
+		relative_position_id = BRI_forteress_brittany
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		army_experience = 5
+			791 = {
+				add_building_construction = { type = coastal_bunker province = 3552 level = 4 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 542 level = 1 instant_build = yes }
+			}
+			789 = {
+				add_building_construction = { type = coastal_bunker province = 6536 level = 4 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 9510 level = 1 instant_build = yes }
+			}
+			790 = {
+				add_building_construction = { type = coastal_bunker province = 6572 level = 4 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 9525 level = 1 instant_build = yes }
+			}
+			788 = {
+				add_building_construction = { type = coastal_bunker province = 11508 level = 1 instant_build = yes }
+			}
+			if = {
+				limit = {
+					owns_state = 792
+				}
+				792 = {
+					add_building_construction = { type = coastal_bunker province = 11465 level = 4 instant_build = yes }
+					add_building_construction = { type = coastal_bunker province = 11616 level = 1 instant_build = yes }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_mobilize
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = {focus = BRI_forteress_brittany}
+		x = -1
+		y = 1
+		relative_position_id = BRI_forteress_brittany
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			threat > 0.5
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = extensive_conscription
+			add_ideas = partial_economic_mobilisation
+			BRI = {
+				war_support_factor = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_jewish_safe_heaven
+		icon = GFX_focus_generic_concessions
+		prerequisite = {focus = BRI_proclaim_breton_republic focus = BRI_request_dominion}
+		x = 3
+		y = 1
+		relative_position_id = BRI_request_dominion
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			OR = {
+				AND = {
+					GER = {has_government = fascism}
+					GER = {owns_state = 16}
+				}
+				FRA = {has_government = fascism}
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BRI_celtic_all
+		icon = GFX_goal_generic_alliance
+		prerequisite = {focus = BRI_proclaim_breton_republic}
+		x = 3
+		y = 3
+		relative_position_id = BRI_proclaim_breton_republic
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas {
+				remove_idea = BRI_breton_republic_1
+				add_idea = BRI_breton_republic_1
+			}
+			create_faction = BRI_celtic_alliance
+		}
+	}
+
+	focus = {
+		id = BRI_invite_irl
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = {focus = BRI_celtic_all}
+		x = 0
+		y = 1
+		relative_position_id = BRI_celtic_all
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_government = democratic
+			IRE = {has_government = democratic}
+			IRE = {is_in_faction = no}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				IRE = { country_event = generic.5 }
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_celtic_protector
+		icon = GFX_focus_attack_britain
+		prerequisite = {focus = BRI_invite_irl}
+		x = 0
+		y = 1
+		relative_position_id = BRI_invite_irl
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_government = democratic
+			is_faction_leader = yes
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = BRI_brittany_britain
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = {focus = BRI_proclaim_breton_republic}
+		x = 2
+		y = 0
+		relative_position_id = BRI_celtic_all
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			is_in_faction_with = ENG
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			ENG = { country_event = generic.2 }
+		}
+	}
+
+	focus = {
+		id = BRI_british_investment
+		icon = GFX_focus_generic_industry_3
+		prerequisite = {focus = BRI_brittany_britain}
+		x = 0
+		y = 1
+		relative_position_id = BRI_brittany_britain
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			is_in_faction_with = ENG
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
 
 
 }

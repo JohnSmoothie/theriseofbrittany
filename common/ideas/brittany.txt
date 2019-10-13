@@ -118,13 +118,9 @@ ideas = {
         original_tag = BRI
       }
 
-      available {
-
-      }
+      picture = usa_great_depression_2
 
       removal_cost = -1
-
-      picture = idea_usa_great_depression_2
 
       modifier = {
         consumer_goods_factor = 0.1
@@ -136,20 +132,131 @@ ideas = {
         original_tag = BRI
       }
 
-      available {
-
-      }
+      picture = usa_great_depression_3
 
       removal_cost = -1
 
-      picture = idea_usa_great_depression_3
+      modifier = {
+        consumer_goods_factor = 0.15
+        stability_factor = -0.3
+        political_power_gain = -0.35
+      }
+    }
+
+    BRI_independance_turmoil_3{
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = usa_great_depression_2
+
+      removal_cost = -1
 
       modifier = {
-        consumer_goods_factor = 0.1
-        stability_factor = -0.15
+        consumer_goods_factor = 0.10
+        stability_factor = -0.2
         political_power_gain = -0.25
       }
     }
+
+    BRI_independance_turmoil_4{
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = the_Great_Depression
+
+      removal_cost = -1
+
+      modifier = {
+        consumer_goods_factor = 0.05
+        stability_factor = -0.1
+        political_power_gain = -0.15
+      }
+    }
+
+    BRI_breton_republic_1 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = generic_morale_bonus
+
+      removal_cost = -1
+
+      modifier = {
+        stability_factor = 0.1
+        political_power_gain = 0.05
+      }
+    }
+
+    BRI_breton_research {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = generic_research_bonus
+
+      removal_cost = -1
+
+      modifier = {
+        research_speed_factor = 0.05
+      }
+    }
+
+    BRI_breton_republic_2 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = generic_morale_bonus
+
+      removal_cost = -1
+
+      modifier = {
+        stability_factor = 0.1
+        political_power_gain = 0.05
+      }
+      rule = {
+				can_create_factions = yes
+			}
+      
+    }
+
+    BRI_forteress_brittany_1 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = fortification_Focus
+
+      removal_cost = -1
+
+      modifier = {
+        production_speed_bunker_factor = 0.1
+        production_speed_coastal_bunker_factor = 0.1
+        production_speed_anti_air_building_factor = 0.1
+      }
+    }
+
+    BRI_forteress_brittany_2 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = fortification_Focus
+
+      removal_cost = -1
+
+      modifier = {
+        production_speed_bunker_factor = 0.1
+        production_speed_coastal_bunker_factor = 0.1
+        production_speed_anti_air_building_factor = 0.1
+        industrial_capacity_factory = 0.1
+      }
+    }
+
+
 
   }
 

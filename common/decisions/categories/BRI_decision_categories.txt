@@ -1,0 +1,29 @@
+################
+##### BRI ######
+################
+
+BRI_host_jewish_refugees = {
+
+	icon = hol_obtain_foreign_colonial_investments
+
+	allowed = {
+		original_tag = BRI
+	}
+
+	visible = {
+		has_completed_focus = BRI_jewish_safe_heaven
+	}
+}
+
+BRI_protector_celtic_world = {
+
+	icon = hol_obtain_foreign_colonial_investments
+
+	allowed = {
+		original_tag = BRI
+	}
+
+	visible = {
+		has_completed_focus = BRI_celtic_protector
+	}
+}

@@ -6,20 +6,21 @@ country_event = {
 	title = brittany.1.t
 	desc = brittany.1.d
 	picture = report_event_generic_riot
-	
+
 	trigger = {
 		tag = BRI
 		BRI = {
 			is_subject = yes
 		}
-		FRA	= { has_capitulated = yes } 
-		at_war = yes
-	}	
+		has_completed_focus = BRI_request_dominion
+		FRA	= { has_capitulated = yes }
+		has_war = yes
+	}
 
 	fire_only_once = yes
 
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = brittany.1.a
 		OVERLORD = {
@@ -28,12 +29,76 @@ country_event = {
 						autonomy_state = autonomy_free
 					}
 				}
-		BRI = { transfer_state = 792 }
 		BRI = { leave_faction = yes }
-		every_enemy_country = { white_peace = ROOT }
-	}	
-
-}
-}
-
+		BRI = { white_peace = every_enemy_country }
+		BRI = { transfer_state = 792 }
 	}
+}
+
+country_event = {
+	id = brittany.2
+	title = brittany.2.t
+	desc = brittany.2.d
+	picture = report_event_generic_riot
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = brittany.2.a
+		BRI = {add_to_faction = IRL}
+	}
+}
+
+country_event = {
+	id = brittany.3
+	title = brittany.3.t
+	desc = brittany.3.d
+	picture = report_event_generic_riot
+
+	trigger = {
+		tag = BRI
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = brittany.3.a
+		IRE = {transfer_state = 119}
+	}
+}
+
+#country_event = {
+#	id = brittany.4
+#	title = brittany.4.t
+#	desc = brittany.4.d
+#	picture = report_event_generic_riot
+
+#	fire_only_once = yes
+
+#	mean_time_to_happen = { days = 1 }
+
+#	option = {
+#		name = brittany.4.a
+#		ENG = {release = WLS}
+#	}
+#}
+
+#country_event = {
+#	id = brittany.5
+#	title = brittany.5.t
+#	desc = brittany.5.d
+#	picture = report_event_generic_riot
+
+#	fire_only_once = yes
+
+#	mean_time_to_happen = { days = 1 }
+
+#	option = {
+#		name = brittany.5.a
+#		ENG = {release = SCO}
+#	}
+#}
