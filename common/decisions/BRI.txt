@@ -107,11 +107,12 @@ BRI_host_jewish_refugees = {
 		available = {
 			has_government = democratic
 			has_war = no
+			GER = {controls_state = 16}
 		}
 
 		cost = 50
 
-		days_re_enable = 5
+		days_re_enable = 30
 
 		fire_only_once = no
 
@@ -218,8 +219,36 @@ BRI_protector_celtic_world = {
 			SCO = { country_event = generic.5 }
 		}
 	}
+}
 
+BRI_host_communist_refugees = {
+	BRI_smuggle_communist = {
+		allowed = {
+			original_tag = BRI
+		}
 
+		available = {
+			has_government = communism
+			has_war = no
+			GER = {controls_state = 16}
+		}
 
+		cost = 50
 
+		days_re_enable = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+
+		}
+
+		complete_effect = {
+			788 = { add_manpower = 10000}
+		}
+	}
 }

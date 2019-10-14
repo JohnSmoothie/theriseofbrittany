@@ -27,3 +27,16 @@ BRI_protector_celtic_world = {
 		has_completed_focus = BRI_celtic_protector
 	}
 }
+
+BRI_host_communist_refugees = {
+
+	icon = hol_obtain_foreign_colonial_investments
+
+	allowed = {
+		original_tag = BRI
+	}
+
+	visible = {
+		has_completed_focus = BRI_host_communist
+	}
+}

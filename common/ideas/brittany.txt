@@ -377,12 +377,12 @@ ideas = {
 			}
     }
 
-    BRI_breizh_2 {
+    BRI_militaristic_soc {
       allowed = {
         original_tag = BRI
       }
 
-      picture = FRA_army_of_aggression_focus
+      picture = generic_manpower_bonus
 
       removal_cost = -1
 
@@ -405,6 +405,89 @@ ideas = {
       modifier = {
 				justify_war_goal_time = -0.25
 			}
+    }
+
+    BRI_socialist_youth {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = socialist_science_focus
+
+      removal_cost = -1
+
+      modifier = {
+				conscription = 0.03
+			}
+    }
+
+    BRI_komunouriezh_1 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = idea_eng_spirit_of_the_industrial_revolution
+
+      removal_cost = -1
+
+      modifier = {
+				production_factory_max_efficiency_factor = 0.1
+        production_speed_buildings_factor = 0.1
+			}
+    }
+
+    BRI_komunouriezh_2 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = idea_eng_spirit_of_the_industrial_revolution
+
+      removal_cost = -1
+
+      modifier = {
+				production_factory_max_efficiency_factor = 0.1
+        production_speed_buildings_factor = 0.1
+        conscription = 0.02
+        stability_factor = 0.1
+			}
+    }
+
+    BRI_socialist_utopia_1 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = home_of_the_revolution
+
+      removal_cost = -1
+
+      modifier = {
+				consumer_goods_factor = -0.05
+        stability_factor = 0.1
+			}
+      rule = {
+        can_create_factions = yes
+      }
+    }
+
+    BRI_socialist_utopia_2 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = home_of_the_revolution
+
+      removal_cost = -1
+
+      modifier = {
+				consumer_goods_factor = -0.05
+        stability_factor = 0.1
+        subversive_activites_upkeep = -0.25
+			}
+      rule = {
+        can_create_factions = yes
+      }
     }
 
   }
