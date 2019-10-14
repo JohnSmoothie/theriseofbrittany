@@ -122,3 +122,49 @@ country_event = {
 		BRI = {transfer_state = 792}
 	}
 }
+
+country_event = {
+	id = brittany.7
+	title = brittany.7.t
+	desc = brittany.7.d
+	picture = report_event_generic_riot
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = brittany.7.a
+		BRI = {transfer_state = 792}
+	}
+	option = {
+		name = brittany7.b
+		BRI = {
+			create_wargoal = {
+				type = take_state_focus
+				target = FRA
+				generator = { 792 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = brittany.8
+	title = brittany.8.t
+	desc = brittany.8.d
+	picture = report_event_generic_riot
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = brittany.8.a
+		BRI = {transfer_state = 792}
+	}
+}

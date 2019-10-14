@@ -362,6 +362,51 @@ ideas = {
 			}
     }
 
+    BRI_breizh_1 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = FRA_army_of_aggression_focus
+
+      removal_cost = -1
+
+      modifier = {
+				war_support_factor = 0.1
+        conscription = 0.03
+			}
+    }
+
+    BRI_breizh_2 {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = FRA_army_of_aggression_focus
+
+      removal_cost = -1
+
+      modifier = {
+				war_support_factor = 0.1
+        conscription = 0.05
+        stability_factor = 0.05
+			}
+    }
+
+    BRI_celtic_dom {
+      allowed = {
+        original_tag = BRI
+      }
+
+      picture = idea_generic_oppression
+
+      removal_cost = -1
+
+      modifier = {
+				justify_war_goal_time = -0.25
+			}
+    }
+
   }
 
 

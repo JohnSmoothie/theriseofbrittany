@@ -2473,7 +2473,7 @@ focus_tree = {
 	focus = {
 		id = BRI_catholic_schools
 		icon = GFX_focus_research
-		prerequisite = {focus = BRI_call_hairess}
+		prerequisite = {focus = BRI_call_hairess focus = BRI_empower_PNB}
 		x = 3
 		y = 1
 		relative_position_id = BRI_call_hairess
@@ -2498,6 +2498,464 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = BRI_empower_PNB
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = {focus = BRI_enforce_identity}
+		x = 0
+		y = 2
+		relative_position_id = BRI_enforce_identity
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			fascism > 0.4
+		}
+
+		bypass = {
+			has_government = fascism
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			remove_ideas = BRI_independance_turmoil_2
+		}
+	}
+
+	focus = {
+		id = BRI_invite_marcel_cachin
+		icon = GFX_focus_prc_agrarian_socialism
+		prerequisite = {focus = BRI_red_lighthouse}
+		x = 0
+		y = 2
+		relative_position_id = BRI_red_lighthouse
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			communism > 0.5
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			remove_ideas = BRI_independance_turmoil_2
+		}
+	}
+
+	focus = {
+		id = BRI_breizhad
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = {focus = BRI_empower_PNB}
+		x = 0
+		y = 1
+		relative_position_id = BRI_empower_PNB
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = BRI_breizh_1
+		}
+	}
+
+	focus = {
+		id = BRI_nantes_or_war
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = {focus = BRI_breizhad}
+		x = -1
+		y = 1
+		relative_position_id = BRI_breizhad
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_government = fascism
+			FRA = {controls_state = 792}
+		}
+
+		bypass = {
+			controls_state = 792
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			FRA = { country_event = brittany.7 }
+		}
+	}
+
+	focus = {
+		id = BRI_militarise_society
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = {focus = BRI_breizhad}
+		x = 3
+		y = 1
+		relative_position_id = BRI_breizhad
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_government = fascism
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = extensive_conscription
+			add_ideas = war_economy
+		}
+	}
+
+	focus = {
+		id = BRI_true_militaristic_society
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {focus = BRI_militarise_society}
+		x = 0
+		y = 1
+		relative_position_id = BRI_militarise_society
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_government = fascism
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BRI_breizh_1
+				add_idea = BRI_breizh_2
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_celtic_domination
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		prerequisite = {focus = BRI_breizhad}
+		x = 1
+		y = 2
+		relative_position_id = BRI_breizhad
+
+		mutually_exclusive = { focus = BRI_join_axis}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_government = fascism
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = BRI_celtic_dom
+		}
+	}
+
+	focus = {
+		id = BRI_eyes_on_prize
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = {focus = BRI_celtic_domination}
+		x = 0
+		y = 1
+		relative_position_id = BRI_celtic_domination
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_government = fascism
+			IRE = {
+				owns_state = 135
+				owns_state = 134
+				owns_state = 113
+			}
+		}
+
+		bypass = {
+			owns_state = 135
+			owns_state = 134
+			owns_state = 113
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = IRE
+				generator = { 135 134 113 }
+			}
+			135 = {
+				add_claim_by = BRI
+			}
+			134 = {
+				add_claim_by = BRI
+			}
+			113 = {
+				add_claim_by = BRI
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_take_britain_down
+		icon = GFX_focus_attack_britain
+		prerequisite = {focus = BRI_eyes_on_prize}
+		x = 0
+		y = 1
+		relative_position_id = BRI_eyes_on_prize
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			has_government = fascism
+			ENG = {
+				owns_state = 119
+				owns_state = 122
+				owns_state = 121
+				owns_state = 120
+				owns_state = 136
+			}
+		}
+
+		bypass = {
+			owns_state = 119
+			owns_state = 122
+			owns_state = 121
+			owns_state = 120
+			owns_state = 136
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				generator = { 122 119 121 120 136 }
+			}
+			122 = {
+				add_claim_by = BRI
+			}
+			119 = {
+				add_claim_by = BRI
+			}
+			121 = {
+				add_claim_by = BRI
+			}
+			120 = {
+				add_claim_by = BRI
+			}
+			136 = {
+				add_claim_by = BRI
+			}
+		}
+	}
+
+	focus = {
+		id = BRI_join_axis
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = {focus = BRI_breizhad}
+		x = -2
+		y = 0
+		relative_position_id = BRI_celtic_domination
+
+		mutually_exclusive = { focus = BRI_celtic_domination}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			GER = {has_government = fascism}
+
+		}
+
+		bypass = {
+			is_in_faction_with = GER
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_opinion_modifier = { target = GER modifier = large_increase }
+			GER = {add_opinion_modifier = { target = BRI modifier = large_increase }}
+			GER = { country_event = generic.2 }
+		}
+	}
+
+	focus = {
+		id = BRI_loire_atlantique_question
+		icon = GFX_focus_generic_treaty
+		prerequisite = {focus = BRI_join_axis}
+		x = 0
+		y = 2
+		relative_position_id = BRI_join_axis
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			GER = {controls_state = 792}
+			is_in_faction_with = GER
+		}
+
+		bypass = {
+			controls_state = 792
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			GER = { country_event = brittany.8 }
+		}
+	}
+
+	focus = {
+		id = BRI_fascist_investment
+		icon = GFX_focus_generic_industry_3
+		prerequisite = {focus = BRI_join_axis}
+		x = -1
+		y = 1
+		relative_position_id = BRI_join_axis
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			is_in_faction_with = GER
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
