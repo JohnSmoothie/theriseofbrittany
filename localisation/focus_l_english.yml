@@ -2284,124 +2284,125 @@
  BRI_industrialisation_program:0 "Industrialization Program"
  BRI_industrialisation_program_desc:0 "We must start our first industrial program for the future of Brittany"
  BRI_vannes_to_brest:0 "Vannes to Brest road"
-
+ BRI_vannes_to_brest_desc:0 "We need to improve Brittany's Infrastructures and develop the southern road"
  BRI_saint_malot_to_brest:0 "Saint Malo to Brest Road"
-
+ BRI_saint_malot_to_brest_desc:0 "We need to improve Brittany's Infrastructures and develop the northern road"
  BRI_improve_western_capital:0 "Improve the western capital"
-
+ BRI_improve_western_capital_desc:0 "Developing Brest's industries should be our priority"
  BRI_urbanize_rennes:0 "Urbanize Rennes"
-
+ BRI_urbanize_rennes_desc:0 "Our next step is to urbanize the eastern city of Rennes"
  BRI_urbanize_lorient:0 "Urbanize Lorient"
-
+ BRI_urbanize_lorient_desc:0 "Our next step is to urbanize the costal city of Lorient"
  BRI_arms_redon:0 "Open the military complex in Redon"
-
+ BRI_arms_redon_desc:0 "We will now open the military complex in Redon"
  BRI_arms_vannes:0 "Open the military complex in Vannes"
-
+ BRI_arms_vannes_desc:0 "We will now open the military complex in Redon"
  BRI_complete_industrial_program:0 "Complete the Industrialization program"
-
+ BRI_complete_industrial_program_desc:0 "After all our efforts we will now complete the industrialization program"
  BRI_ecole_mines:0 "L'ecole des mines"
-
- BRI_brest_refinery:0 "Brest Refineries"
-
+ BRI_ecole_mines_desc:0 "The ecole des mines will be the leading industrial research institute of Brittany"
+ BRI_brest_refinery:0 "Brest's Refineries"
+ BRI_brest_refinery_desc:0 "We will open the Brest's refineries to gain more autonomy in oil production"
  BRI_open_steel_mines:0 "Open the steel mines"
-
+ BRI_open_steel_mines_desc:0 "We shall now open the steel mines"
  BRI_prospect_alu:0 "Prospect for Aluminium"
-
+ BRI_prospect_alu_desc:0 "Our soil is rich in aluminium and we will prospect for it"
  BRI_exp_steel_mines:0 "Expend the steel mines"
-
+ BRI_exp_steel_mines_desc:0 "We shall expend the steel mines for the good of Brittany"
  BRI_old_capital:0 "The old capital"
-
+ BRI_old_capital_desc:0 "Now that we took back control of our historical capital we need to develop the city's industries"
  BRI_modernize_st_nazaire:0 "Modernize the port of St-Nazaire"
-
+ BRI_modernize_st_nazaire_desc:0 "The port of St-Nazaire is of high importance for our nation"
  BRI_nantes_arms:0 "Nantes's munition factories"
-
+ BRI_nantes_arms_desc:0 "We will now expend Nantes's munition factories"
  BRI_nantes_university:0 "The university of Nantes"
-
+ BRI_nantes_university_desc:0 "We will now open the university of Nantes"
  BRI_donge_refinery:0 "Open the refinery of Donges"
-
+ BRI_donge_refinery_desc:0 "We will open the Donges's refineries to reafirm our autonomy in oil production"
  BRI_improve_rubber:0 "Improve rubber production"
-
+ BRI_improve_rubber_desc:0 "Improving our rubber production is vital for our military production"
  BRI_project_broceliande:0 "Project Brocéliande"
-
+ BRI_project_broceliande_desc:0 "Project Brocéliande is Brittany's plan for nuclear armement"
  BRI_jet_effort:0 "Nijerez Dreistson"
+ BRI_jet_effort_desc:0 "Brittany shall be the leading power in jet technologies"
 
  ##political##
  BRI_call_PFB:0 "Call the PFB"
-
+ BRI_call_PFB_desc:0 "The futur of Brittany is in our hands"
  BRI_carry_on_economic_aid:0 "Keep the economic aids"
-
+ BRI_carry_on_economic_aid_desc:0 "Members of the PFB came to the realisation that France can bring us a lot of good for Brittany"
  BRI_stop_aid:0 "Cut the economic aids"
-
+ BRI_stop_aid_desc:0 "After many heatred debate the PFB decided that independance is the only way for our development"
  BRI_joint_industrial:0 "Joint industrial plan"
-
+ BRI_joint_industrial_desc:0 "We will dicuss with Paris for the first joint industrial plan"
  BRI_request_autonomy_1:0 "Request more autonomy"
-
+ BRI_request_autonomy_1_desc:0 "Our good relation with our overlord allows us to negiciate more autonomy for Brittany"
  BRI_joint_military:0 "Joint military construction program"
-
+ BRI_joint_military_desc:0 "We will now dicuss a joint military construction program"
  BRI_joint_naval:0 "Joint naval construction program"
-
+ BRI_joint_naval_desc:0 "We will now dicuss a joint naval construction program"
  BRI_joint_research:0 "Joint research program"
-
+ BRI_joint_research_desc:0 "We will now dicuss a joint research program"
  BRI_request_colony:0 "Push for even more autonomy"
-
+ BRI_request_colony_desc:0 "With our last efforts we can push for even more autonomy"
  BRI_increase_investment:0 "Increase french investments"
-
+ BRI_increase_investment_desc:0 "We will now increase french investments"
  BRI_request_dominion:0 "Request the separation of the institutions"
-
+ BRI_request_dominion_desc:0 "Request the separation of the institutions"
  BRI_final_joint_industry:0 "Final Joint Industrialisation Plan"
-
+ BRI_final_joint_industry_desc:0 "this will be our final joint industrialisation plan with France"
  BRI_rewarded_loyalty:0 "Rewarded loyalty"
-
+ BRI_rewarded_loyalty_desc:0 "Our long lasting lowalty will now be rewarded with the return of the historical county of Nantes"
  BRI_deal_independance:0 "Deal for Independance"
-
+ BRI_deal_independance_desc:0 "We have now enough leverage to negociate a deal for Independance with France"
  BRI_focus_ma_bro:0 "Ma Bro"
-
+ BRI_focus_ma_bro_desc:0 "Brittany can now be considered as a great beacon of Liberty and Democracy"
  BRI_immediate_independance:0 "Call for Immediate Independence"
-
+ BRI_immediate_independance_desc:0 "We must call for immediate independence to safeguard the futur of Brittany but we must be ready to face the consequences"
  BRI_keep_federalist:0 "Keep the federalist system"
-
+ BRI_keep_federalist_desc:0 "We will keep the current federalist system"
  BRI_ease_concers:0 "Ease the concerns"
-
- BRI_proclaim_breton_republic:0 "Proclaim the breton republic"
-
+ BRI_ease_concers_desc:0 "We need to ease the concerns from the independance and end the crisis"
+ BRI_proclaim_breton_republic:0 "Proclaim the breton republic "
+ BRI_proclaim_breton_republic_desc:0 "We are now ready to proclaim the independent breton republic"
  BRI_forteress_brittany:0 "Forteress Brittany"
-
+ BRI_forteress_brittany_desc:0 "Our homeland is beutyfull and it needs to be protected from foreign invaders"
  BRI_our_maginot:0 "A maginot of our own"
-
+ BRI_our_maginot_desc:0 "The breton maginot will be our mighty line of defence againt land invaders"
  BRI_naval_fort:0 "Gward-aod"
-
+ BRI_naval_fort_desc:0 "Surrounded by sea, it is critical to defend oursefle from naval invasions"
  BRI_mobilize:0 "Mobilization of the economy"
-
+ BRI_mobilize_desc:0 "With the rising world tension we must mobilize our economy to safeguard our sovereignty"
  BRI_jewish_safe_heaven:0 "A jewish safe heaven"
-
+ BRI_jewish_safe_heaven_desc:0 "Our jewish brothers are suffering abroad and we must welcome them and protect them"
  BRI_celtic_all:0 "The Celtic Alliance"
-
+ BRI_celtic_all_desc:0 "Our futur lays in the hands of our celtic brothers"
  BRI_invite_irl:0 "Approach Ireland"
-
+ BRI_invite_irl_desc:0 "The Brittany Ireland axis will be the cornerstone of the celtic alliance"
  BRI_celtic_protector:0 "Protector of the Celtic world"
-
+ BRI_celtic_protector_desc:0 "We must now set ourself as the protector of the celtic world"
  BRI_brittany_britain:0 "Brittany and Britain"
-
+ BRI_brittany_britain_desc:0 "An alliance with the United Kingdom will benefit greatly to our nation"
  BRI_british_investment:0 "Invite British investments"
-
+ BRI_british_investment_desc:0 "We will now invite british investments into our country"
  BRI_new_way:0 "A new way"
-
+ BRI_new_way_desc:0 "Federalism as shown his weakness and we shall seek a new way for Brittany to resolve the current crisis"
  BRI_old_traditions:0 "Go back to old traditions"
-
+ BRI_old_traditions_desc:0 "We shall go back to old traditions to bring back faith into the people's heart"
  BRI_enforce_identity:0 "Enforce the breton identity"
-
+ BRI_enforce_identity_desc:0 "Our salvation will only come from our people and we must be warry of any ennemy of the nation"
  BRI_red_lighthouse:0 "The red lighthouse"
-
+ BRI_red_lighthouse_desc:0 "Brittany shall serve as a lighthouse to guide the socialist people of europe"
  BRI_call_hairess:0 "Call the legitimate hairesse"
-
+ BRI_call_hairess_desc:0 "The people is now ready to welcome the legitimate hairesse and restore the duchy of Brittany"
  BRI_ducal_factory:0 "Ducal Ordonance factory"
-
+ BRI_ducal_factory_desc:0 "Ducal Ordonance factory"
  BRI_reopen_french_relations:0 "Reopen French relations"
-
+ BRI_reopen_french_relations_desc:0 "We need to reopen the French relations to be in a position for demandes"
  BRI_ask_home_duchess:0 "Ask for the home of the duchess"
-
+ BRI_ask_home_duchess_desc:0 "The duchess needs his encestral home"
  BRI_irish_raprochement:0 "Irish rapprochement"
-
+ BRI_irish_raprochement_desc:0 "We need to end the felony of republicanism in Ireland by all mean"
  BRI_irish_coup:0 "Irish monarchist coup"
 
  BRI_northern_ireland_issue:0 "The northern ireland issue"
