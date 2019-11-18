@@ -2223,7 +2223,19 @@ BRI_democratic_ADJ:0 "Breton"
 BRI_neutrality_ADJ:0 "Breton"
 BRI_communism_ADJ:0 "Breton"
 
- 
+UKB_fascism:0 "Grande Bretagne"
+UKB_fascism_DEF:0 "la Grande Bretagne"
+UKB_democratic:0 "République Irlando-Bretonne"
+UKB_democratic_DEF:0 "la République Irlando-Bretonne"
+UKB_neutrality:1 "Royaume Unie de Bretagne et d'Irlande"
+UKB_neutrality_DEF:1 "le Royaume Unie de Bretagne et d'Irlande"
+UKB_communism:0 "Provinces Celtiques"
+UKB_communism_DEF:0 "les Provinces Celtiques"
+UKB_fascism_ADJ:0 "Celtique"
+UKB_democratic_ADJ:0 "Celtique"
+UKB_neutrality_ADJ:0 "Celtique"
+UKB_communism_ADJ:0 "Celtique"
+
 
 ######################
 ###  TO BE ERASED  ###

@@ -186,3 +186,4 @@ NIR = "countries/Northern Ireland.txt"
 ##
 
 BRI = "countries/Brittany.txt"
+UKB = "countries/UKBI.txt"

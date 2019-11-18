@@ -2296,7 +2296,7 @@
  BRI_arms_redon:0 "Open the military complex in Redon"
  BRI_arms_redon_desc:0 "We will now open the military complex in Redon"
  BRI_arms_vannes:0 "Open the military complex in Vannes"
- BRI_arms_vannes_desc:0 "We will now open the military complex in Redon"
+ BRI_arms_vannes_desc:0 "We will now open the military complex in Vannes"
  BRI_complete_industrial_program:0 "Complete the Industrialization program"
  BRI_complete_industrial_program_desc:0 "After all our efforts we will now complete the industrialization program"
  BRI_ecole_mines:0 "L'ecole des mines"
@@ -2404,59 +2404,59 @@
  BRI_irish_raprochement:0 "Irish rapprochement"
  BRI_irish_raprochement_desc:0 "We need to end the felony of republicanism in Ireland by all mean"
  BRI_irish_coup:0 "Irish monarchist coup"
-
+ BRI_irish_coup_desc:0 "The time as come to tople the republican regime of Ireland and assert our dominance on them"
  BRI_northern_ireland_issue:0 "The northern ireland issue"
-
+ BRI_northern_ireland_issue_desc:0 "The northern ireland issue must be resolved to prove oursefle to the Irish people"
  BRI_united_kingdoms:0 "The United Kingdom of Brittany and Ireland"
-
+ BRI_united_kingdoms_desc:0 "After all our effort we can establish the United Kingdom of Brittany and Ireland"
  BRI_catholic_schools:0 "Catholic schools"
-
+ BRI_catholic_schools_desc:0 "Our catholic ways must be taught at school to the younglings"
  BRI_empower_PNB:0 "Empower the PNB"
-
+ BRI_empower_PNB_desc:0 "The time as come to establish a breton regime ready to fight for the breton people's interests"
  BRI_invite_marcel_cachin:0 "Invite Marcel Cachin"
-
+ BRI_invite_marcel_cachin_desc:0 "Marcel Cachin is a friend of Brittany and a great communist politician we should invite him to lead our people"
  BRI_breizhad:0 "Breizhad"
-
+ BRI_breizhad_desc:0 "We will fight for the great breton people and destroy the undesirable"
  BRI_nantes_or_war:0 "Nantes or war"
-
+ BRI_nantes_or_war_desc:0 "Nantes is the historical home of our people and we must retake it from the invader"
  BRI_militarise_society:0 "Militarize the society"
-
+ BRI_militarise_society_desc:0 "We must militarise every part of our society to protect the breton people"
  BRI_true_militaristic_society:0 "A true militaristic society"
-
+ BRI_true_militaristic_society_desc:0 "Our nation is now fully militarised and we are ready to go to war to protect the breton identity"
  BRI_celtic_domination:0 "Celtic domination"
-
+ BRI_celtic_domination_desc:0 "It is our Manifest Destiny to be the leader of the Celtic world and to rid them of the british swines"
  BRI_eyes_on_prize:0 "Eyes on the prize"
-
+ BRI_eyes_on_prize_desc:0 "Our main goal for now must be to claim Ireland as a part of our nation"
  BRI_take_britain_down:0 "Take down britain"
-
+ BRI_take_britain_down_desc:0 "It is now time to crush the british domination on the celtic world"
  BRI_join_axis:0 "Ally with Germany"
-
+ BRI_join_axis_desc:0 "To be able to realize our ambitions we must ally with Germany"
  BRI_loire_atlantique_question:0 "The Loire Atlantique question"
-
+ BRI_loire_atlantique_question_desc:0 "France as fallen and Germany controls Loire Atlantique, thanks to our good relations with the german people they are willing to hand the province to its rightfull owner"
  BRI_research_republic:0 "Education reforms"
-
+ BRI_research_republic_desc:0 "We will reform the educational system for the good of the breton people"
  BRI_fascist_investment:0 "German investments"
-
+ BRI_fascist_investment_desc:0 "We must welcome german investements into brittany"
  BRI_improve_socialist_spirit:0 "Improve the socialist spirit"
-
+ BRI_improve_socialist_spirit_desc:0 "The socialist spirit of Brittany shall shine upon Europe"
  BRI_host_communist:0 "Host communist refugees"
-
+ BRI_host_communist_desc:0 "Communists are being oppressed abroad under fascist governments, we must come to there help and welcome them into our communist utopia"
  BRI_integrate_communist:0 "Integrate the communist refugees"
-
+ BRI_integrate_communist_desc:0 "The communist refugees are now fully committed to breton socialism and are ready to fight in it's name"
  BRI_endoctrinate_youth:0 "Endoctrinate the youth"
-
+ BRI_endoctrinate_youth_desc:0 "The youth in the cornerstone of our society and we should educate them as good socialist citizens"
  BRI_socialist_schools:0 "Socialist Schools"
-
+ BRI_socialist_schools_desc:0 "Socialising the schools <ill improve our indoctrination efforts on the youth"
  BRI_join_commintern:0 "Join the Commintern"
-
+ BRI_join_commintern_desc:0 "Breton socialism is fragile and we should ask the russians to protect it"
  BRI_communist_investement:0 "Welcome Soviet aid"
-
+ BRI_communist_investement_desc:0 "The soviets are ready to invest into our socialist society"
  BRI_socialist_utopia:0 "A socialist Utopia"
-
+ BRI_socialist_utopia_desc:0 "After all our efforts we transformed Brittany into a true socialist Utopia"
  BRI_bring_fascist_down:0 "Bring the fascists down"
-
+ BRI_bring_fascist_down_desc:0 "The fascist swines made the communists suffers for too long, it is time for them to pay"
  BRI_revenge_for_colonization:0 "Revenge for the colonization"
-
+ BRI_revenge_for_colonization_desc:0 "For to long as the Breton people suffered under coloniasation and occupation, we must avenge our troubled past to build a greater future for Brittany"
 
 
  ### HOVELAX'S GENERIC FOCUS TREE ###

@@ -1823,7 +1823,7 @@ focus_tree = {
 			OR = {
 				AND = {
 					GER = {has_government = fascism}
-					GER = {owns_state = 16}
+					GER = {controls_state = 16}
 				}
 				FRA = {has_government = fascism}
 			}
@@ -2429,6 +2429,15 @@ focus_tree = {
 
 		completion_reward = {
 			ENG = { country_event = brittany.3 }
+			IRE = {
+				swap_ideas = {
+					remove_idea = BRI_IRE_neutrality_support_1
+					add_idea = BRI_IRE_neutrality_support_2
+				}
+				add_autonomy_ratio = {
+			 		value = -0.5
+				}
+			}
 		}
 	}
 
@@ -2449,6 +2458,7 @@ focus_tree = {
 		available = {
 			has_government = neutrality
 			IRE = {is_subject_of = BRI}
+			IRE = {has_autonomy_state = autonomy_integrated_puppet}
 		}
 
 		bypass = {
@@ -2460,13 +2470,28 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			IRE = {
-				swap_ideas = {
-					remove_idea = BRI_IRE_neutrality_support_1
-					add_idea = BRI_IRE_neutrality_support_2
-				}
+			annex_country = {
+				target = IRE
+				transfer_troops = yes
 			}
-			set_autonomy = { target = IRE autonomy_state = autonomy_integrated_puppet }
+			135 = {
+				add_core_of = BRI
+				remove_core_of = IRE
+			}
+			134 = {
+				add_core_of = BRI
+				remove_core_of = IRE
+			}
+			113 = {
+				add_core_of = BRI
+				remove_core_of = IRE
+			}
+			119 = {
+				add_core_of = BRI
+				remove_core_of = IRE
+			}
+
+			set_cosmetic_tag = UKB
 		}
 	}
 
@@ -3006,7 +3031,7 @@ focus_tree = {
 			OR = {
 				AND = {
 					GER = {has_government = fascism}
-					GER = {owns_state = 16}
+					GER = {controls_state = 16}
 				}
 				FRA = {has_government = fascism}
 			}
@@ -3218,7 +3243,7 @@ focus_tree = {
 		}
 
 		available = {
-			SOV = {has_government = communism}
+			has_government = communism
 
 		}
 

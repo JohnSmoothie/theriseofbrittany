@@ -2206,7 +2206,7 @@
  NIR_democratic_ADJ:0 "Northern Irish"
  NIR_neutrality_ADJ:1 "Ulster"
  NIR_communism_ADJ:1 "North Irish"
- 
+
 
  ##
 
@@ -2222,3 +2222,16 @@
  BRI_democratic_ADJ:0 "Breton"
  BRI_neutrality_ADJ:0 "Breton"
  BRI_communism_ADJ:0 "Breton"
+
+ UKB_fascism:0 "Greater Brittany"
+ UKB_fascism_DEF:0 "Greater Brittany"
+ UKB_democratic:0 "Commonwealth of Brittany and Ireland"
+ UKB_democratic_DEF:0 "Commonwealth of Brittany and Ireland"
+ UKB_neutrality:1 "United Kingdom of Brittany and Ireland"
+ UKB_neutrality_DEF:1 "United Kingdom of Brittany and Ireland"
+ UKB_communism:0 "Celtic Provinces"
+ UKB_communism_DEF:0 "Celtic Provinces"
+ UKB_fascism_ADJ:0 "Celtic"
+ UKB_democratic_ADJ:0 "Celtic"
+ UKB_neutrality_ADJ:0 "Celtic"
+ UKB_communism_ADJ:0 "Celtic"
