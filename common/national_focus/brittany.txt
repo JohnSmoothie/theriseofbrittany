@@ -154,8 +154,8 @@ focus_tree = {
 	focus = {
 		id = BRI_improve_western_capital
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = {focus = BRI_saint_malot_to_brest}
-		prerequisite = {focus = BRI_vannes_to_brest}
+		prerequisite = {focus = BRI_saint_malot_to_brest
+										focus = BRI_vannes_to_brest}
 		x = 0
 		y = 2
 		relative_position_id = BRI_industrialisation_program
@@ -360,8 +360,8 @@ focus_tree = {
 	focus = {
 		id = BRI_complete_industrial_program
 		icon = GFX_focus_research
-		prerequisite = {focus = BRI_arms_vannes}
-		prerequisite = {focus = BRI_arms_redon}
+		prerequisite = {focus = BRI_arms_vannes
+										focus = BRI_arms_redon}
 		x = 1
 		y = 1
 		relative_position_id = BRI_arms_redon
